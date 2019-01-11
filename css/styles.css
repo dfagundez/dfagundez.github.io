@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Jaldi|Pavanam');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img
+{
+	display: block;
+}
+
+body
+{
+  /*background-image: url(../img/cover.jpg); Photo by Dillon Shook on Unsplash*/
+	background-color: rgb(253, 249, 0);
+  background-size: cover;
+	color: black;
+	font-family: 'Jaldi', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Pavanam', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.box-header div
+{
+	display: inline-block;
+	box-sizing: border-box;
+}
+.box-logo
+{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+.box-txt
+{
+	margin: 5px;
+}
+.link-social
+{
+	padding: 5px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+header
+{
+	width: 100%;
+	height: 82vh;
+
+}
+
+nav
+{
+	margin: auto;
+	width: 100vw;
+	text-align: center;
+}
+
+
+/* Cajas principales de navegacion */
+.box-link
+{
+	background-color: rgba(61, 61, 61);
+	color: white;
+	width: 15%;
+	height: 460px;
+
+	margin-top: 56px;
+}
+
+.box-footer {
+    text-align: center;
+    font-size: 1em;
+}
+.footer-social {
+    font-size: 1em;
+    cursor: pointer;
+}
