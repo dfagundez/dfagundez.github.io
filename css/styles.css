@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Jaldi|Pavanam');
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 *
 {
 	margin: 0;
@@ -8,9 +10,7 @@
 	box-sizing: border-box;
 }
 
-img
-{
-	display: block;
+img{display: block;
 }
 
 body
@@ -20,7 +20,7 @@ body
   background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
-	font-family: 'Patrick Hand SC', cursive;
+	font-family: 'Quicksand', sans-serif;
 	max-width: 100%;
 	max-height: 100%;
 	overflow: hidden;
@@ -32,7 +32,7 @@ a
 	color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
 	font-family: 'Patrick Hand SC', cursive;
 	letter-spacing: 1.5px;
 }
@@ -143,11 +143,13 @@ nav
 .box-footer {
     text-align: center;
     font-size: 1em;
+		margin: 10px;
 }
 .footer-social {
     font-size: 1em;
     cursor: pointer;
 }
+
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
@@ -161,7 +163,23 @@ nav
 		margin-top: 150px;
 		font-size: 1em;
 	}
+	.box-link span:hover
+	{
+		margin-top: 20px; /* Menos 10px del margin original */
+		animation-name: jumping;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes jumping {
+		0% {margin-top: 30px;}
+		50% {margin-top: 20px;} /* Menos 10px del margin original */
+		100% {margin-top: 30px;}
+	}
 }
+
+
 @media only screen and (max-width: 600px) {
   /* For smartphones: */
 	body
@@ -173,6 +191,11 @@ nav
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 	}
+	.box-link
+	{
+		height: 200px;
+		margin-top: 25%;
+	}
 	.box-link h1
 	{
 		display: none;
@@ -180,18 +203,31 @@ nav
 	.box-link span
 	{
 		font-size: 2em;
-		margin-top: 200px;
+		margin-top: 90px;
 	}
 
 	.box-link span:hover
 	{
-		margin-top: 190px;
+		margin-top: 80px; /* Menos 10px del margin original */
 		animation-name: jumping;
 		animation-duration: 0.5s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 	}
 
+	@keyframes jumping {
+		0% {margin-top: 90px;}
+		50% {margin-top: 80px;} /* Menos 10px del margin original */
+		100% {margin-top: 90px;}
+	}
+	header
+	{
+		height: 80vh;
+	}
+
+	.box-footer, .footer-social {
+	    font-size: 0.8em;
+	}
 	@keyframes rainbow {
 	  0% {background-color: rgb(255,255,186);}
 	  25% {background-color: rgb(255,223,186);}
@@ -201,9 +237,5 @@ nav
 	  100% {background-color: rgb(251,252,252);}
 	}
 
-	@keyframes jumping {
-		0% {margin-top: 200px;}
-	  50% {margin-top: 190px;}
-		100% {margin-top: 200px;}
-	}
+
 }
