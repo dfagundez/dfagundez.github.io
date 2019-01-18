@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+
 <!-- Metadatos -->
 <meta charset="utf-8" />
-<meta name="description" content="Portfolio personal propiedad de Diego Fagundez, freelancer." />
-<meta name="keywords" content="Front end,CSS,HTML,JavaScript,Web,Portfolio,Desing,Developer,Programador,Creativo,Branding">
-<meta name="author" content="Diego Fagundez">
+<meta name="description" content="Bienvenido a mi pagina de presentacion, te comparto mis ideas e informacion de contacto" />
+<meta name="keywords" content="Front end,CSS,HTML,JavaScript,Web,Portfolio,Desing,Developer,Programador,Creativo,Branding" />
+<meta name="author" content="Diego Fagundez" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- <meta http-equiv="refresh" content="2"> Refrescar pagina cada 2 seg -->
@@ -15,6 +16,7 @@
 
 <!-- CSS own styles -->
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/modal.css" />
 
 <!-- CSS from Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -23,6 +25,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 <title>Diego Fagundez | Freelancer</title>
+
+<!-- Temporal styles -->
 <style>
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
 .aviso{
@@ -39,14 +43,17 @@
 
 </style>
 </head>
-
 <body>
-<div class="aviso">--Page in construction--</div>
 
+<!-- <div class="aviso">Page in construction</div> -->
+
+<!-- Start main box -->
 <div class="box-main">
 	<!-- Start page header that contains the main menu -->
 	<header class="box-header">
+		<!-- Start box logo and social icons -->
 		<div class="box-logo">
+			<!-- logo and subtitle -->
 			<h1 class="box-title animated flipInY"><a>DIEGO FAGUNDEZ</a></h1>
 			<p class="box-txt">Web design and branding</p>
 
@@ -56,44 +63,108 @@
 				<a href="https://api.whatsapp.com/send?phone=541160518371&text=Hola,%20quiero%20trabajar%20con%20vos!" class="link-social"><span class="icon-whatsapp"></span></a>
 				<a href="//twitter.com/dfagundez_" class="link-social"><span class="icon-twitter"></span></a>
 
-		</div>
+		</div><!-- End box logo and social icons -->
 
-
-
+		<!-- Start nav tag -->
 		<nav>
-
+			<!-- 'Start' Link -->
 			<div class="box-link animated bounceInLeft">
-				<h1>Start</h1>
-				<span class="fas fa-grin-tongue"></span>
-
+				<h4>Start</h4>
+				<span id="btnStart" class="fas fa-grin-tongue"></span>
 			</div>
-
+			<!-- 'Me' Link -->
 			<div class="box-link animated bounceInLeft">
-				<h1>Me</h1>
-				<span class="fas fa-brain"></span>
+				<h4>Me</h4>
+				<span id="btnMe" class="fas fa-brain"></span>
 			</div>
-
+			<!-- 'Ideas' Link -->
 			<div class="box-link animated bounceInUp">
-				<h1>Ideas</h1>
-				<span class="fas fa-lightbulb"></span>
+				<h4>Ideas</h4>
+				<span id="btnIdeas" class="fas fa-lightbulb"></span>
 			</div>
-
+			<!-- 'Blog' Link -->
 			<div class="box-link animated bounceInRight">
-				<h1>Blog</h1>
-				<span class="fas fa-laptop-code"></span>
+				<h4>Blog</h4>
+				<span id="btnBlog" class="fas fa-laptop-code"></span>
 			</div>
-
+			<!-- 'Let's Talk' Link -->
 			<div class="box-link animated bounceInRight">
-				<h1>Let's Talk</h1>
-				<span class="fas fa-mug-hot"></span>
+				<h4>Let's Talk</h4>
+				<span id="btnTalk" class="fas fa-mug-hot"></span>
 			</div>
-
-		</nav>
+		</nav><!-- End nav tag -->
 
 	</header><!-- Termina cabecera de pagica que contiene el menu principal -->
 
+	<!-- Start section tags -->
+	<!-- Start content -->
+	<section id="startModal" class="modal">
+		<div class="start-content">
+			<span id="startClose" class="close">&times;</span>
+			<h2>Bienvenido - Welcome</h2>
+			<img src="img/perfiillll.png" alt="">
+			<article>
+				<p>
+					Si estas aca es para conocer un poco sobre quien soy y que hago.<br/>
+					Te cuento, estudie informatica en la universidad tecnologica del uruguay. Recuerdo que aprendi
+					a programar en C++, crear web sites en FrontPage y data bases en Access.
+				</p><br/>
+				<p>
+					Hoy me encuentro estudiando como autodidacta como la mayoria en este rubro. Me apasionan todos
+					los lenguajes de programacion pero en estos momentos estoy enfocado al desarrollo web y de app.<br/>
+					En los ultimos meses me actualice en SQL, conoci conceptos de scrum y analisis funcional. Tambien
+					aprendi los fundamentos del testing, todo esto para estar bien preparado para trabajar junto a vos.<br/>
+					Si, me encantaria que hablemos te interesa contar con mi creatividad y conocimientos no dudes en
+					contactarme y con mucho gusto hablamos un poco mas.
+				</p>
+			</article>
+		</div>
+	</section><!-- End start content -->
 
+	<!-- Me content -->
+	<section id="meModal" class="modal">
+		<!-- Me content -->
+		<div class="me-content">
+			<span id="meClose" class="close">&times;</span>
+			<h2>ME</h2>
+			<p>Some text in the Me Modal..</p>
+		</div>
+	</section><!-- End me content -->
+
+	<!-- Ideas content -->
+	<section id="ideasModal" class="modal">
+		<!-- Ideas content -->
+		<div class="ideas-content">
+			<span id="ideasClose" class="close">&times;</span>
+			<h2>IDEAS</h2>
+			<p>Some text in the Ideas Modal..</p>
+		</div>
+	</section><!-- End ideas content -->
+
+	<!-- Blog content -->
+	<section id="blogModal" class="modal">
+		<!-- Blog content -->
+		<div class="blog-content">
+			<span id="blogClose" class="close">&times;</span>
+			<h2>BLOG</h2>
+			<p>Some text in the Blog Modal..</p>
+		</div>
+	</section><!-- End blog content -->
+
+	<!-- Talk content -->
+	<section id="talkModal" class="modal">
+		<!-- Let's Talk content -->
+		<div class="talk-content">
+			<span id="talkClose" class="close">&times;</span>
+			<h2>LET'S TALK</h2>
+			<p>Some text in the Let's Talk Modal..</p>
+		</div>
+	</section><!-- End talk content -->
+	<!-- End section tags -->
+
+	<!-- Start footer tag -->
 	<footer class="box-footer">
+
 		<div class="box-copy-footer">
 			<p>
 			All the services provided by Diego Fagundez are subject to a technical and geographical
@@ -102,17 +173,17 @@
 			Ricardo Rojas 1783, Grand Bourg, Province of Buenos Aires Telephone: 15 6051 8371
 			</p>
 		</div>
+
 		<div class="box-social-footer">
 			<a class="footer-social">Pendiente de edicion.</a>
 			<a class="footer-social">Gracias por tu visita</a>
 		</div>
-	</footer>
 
+	</footer><!-- End footer tag -->
 
-	<script>
+<!-- Scrips -->
+<script src="/scripts/modal.js" charset="utf-8"></script>
 
-	</script>
-
-</div>
+</div><!-- End main box -->
 </body>
 </html>

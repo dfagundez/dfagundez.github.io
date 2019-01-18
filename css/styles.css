@@ -15,8 +15,8 @@ img{display: block;
 
 body
 {
-  /*background-image: url(../img/cover.jpg); /*Photo by Dillon Shook on Unsplash*/
-	background-color: rgb(253, 249, 0);
+  /*background-image: url(../img/cover4.jpg); Photo by Dillon Shook on Unsplash*/
+	background-color: rgb(255,179,186);
   background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
@@ -32,7 +32,7 @@ a
 	color: black;
 }
 
-h1 {
+.box-logo h1 {
 	font-family: 'Patrick Hand SC', cursive;
 	letter-spacing: 1.5px;
 }
@@ -53,6 +53,7 @@ h1 {
 .box-txt
 {
 	margin: 5px;
+	width: 100%;
 }
 
 .link-social
@@ -99,7 +100,7 @@ nav
 	background-color: rgb(61, 61, 61, 0.9);
 	color: white;
 	width: 15%;
-	height: 460px;
+	height: 350px;
 	vertical-align: top;
 	margin-top: 5%;
 	box-shadow: 0px 10px 18px rgb(61, 61, 61, 0.5);
@@ -113,22 +114,23 @@ nav
 {
 	border-radius: 8px 0 0 8px;
 }
-.box-link h1
+.box-link h4
 {
 	margin: 10px;
-	font-family: 'Patrick Hand SC', cursive;
+	/*font-family: 'Patrick Hand SC', cursive;*/
 	transition: font-size 1s, margin-top 1s, display 1s;
 }
 .box-link span
 {
+	cursor: pointer;
 	font-size: 6em;
-	margin-top: 120px;
+	margin-top: 80px;
 	transition: font-size 1s, margin-top 1s;
 }
 
 .box-link span:hover
 {
-	margin-top: 110px;
+	margin-top: 70px; /* Menos 10px del margin de .box-link span*/
 	animation-name: jumping;
 	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
@@ -136,21 +138,24 @@ nav
 }
 
 @keyframes jumping {
-	0% {margin-top: 120px;}
-	50% {margin-top: 110px;}
-	100% {margin-top: 120px;}
+	0% {margin-top: 80px;}
+	50% {margin-top: 70px;} /*Menos 10px del margin de .box-link span*/
+	100% {margin-top: 80px;}
 }
 .box-footer {
     text-align: center;
-    font-size: 1em;
-		margin: 10px;
+    font-size: 0.8em;
+		margin: 15px;
 }
 .footer-social {
-    font-size: 1em;
+    font-size: 0.8em;
     cursor: pointer;
 }
-
-
+/* ****************************************** */
+/* ****************************************** */
+/* 							For tablets: 									*/
+/* ****************************************** */
+/* ****************************************** */
 @media only screen and (max-width: 800px) {
   /* For tablets: */
 	.box-link span
@@ -158,9 +163,9 @@ nav
 		font-size: 4em;
 		margin-top: 30px;
 	}
-	.box-link h1
+	.box-link h4
 	{
-		margin-top: 150px;
+		margin-top: 100px;
 		font-size: 1em;
 	}
 	.box-link span:hover
@@ -178,13 +183,16 @@ nav
 		100% {margin-top: 30px;}
 	}
 }
-
-
+/* ****************************************** */
+/* ****************************************** */
+/* 							For smartphones: 							*/
+/* ****************************************** */
+/* ****************************************** */
 @media only screen and (max-width: 600px) {
   /* For smartphones: */
 	body
 	{
-		background-color: rgb(253, 249, 0);
+		background-color: rgb(255,179,186);
 		animation-name: rainbow;
 		animation-duration: 6s;
 		animation-delay: 2s;
@@ -196,7 +204,7 @@ nav
 		height: 200px;
 		margin-top: 25%;
 	}
-	.box-link h1
+	.box-link h4
 	{
 		display: none;
 	}
@@ -229,9 +237,9 @@ nav
 	    font-size: 0.8em;
 	}
 	@keyframes rainbow {
-	  0% {background-color: rgb(255,255,186);}
+	  0% {background-color: rgb(255,179,186);}
 	  25% {background-color: rgb(255,223,186);}
-		50% {background-color: rgb(255,179,186);}
+		50% {background-color: rgb(255,255,186);}
 	  75% {background-color: rgb(186,255,201);}
 		80% {background-color: rgb(186,225,255);}
 	  100% {background-color: rgb(251,252,252);}
