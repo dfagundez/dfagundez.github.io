@@ -1,191 +1,78 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ES">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bienvenido a mi pagina de presentacion, te comparto mis ideas e informacion de contacto" />
+    <meta name="keywords" content="Front end,CSS,HTML,JavaScript,Web,Portfolio,Desing,Developer,Programador,Creativo,Branding" />
+    <meta name="author" content="Diego Fagundez" />
+    <title>Diego Fagundez</title>
 
-<!-- Metadatos -->
-<meta charset="utf-8" />
-<meta name="description" content="Bienvenido a mi pagina de presentacion, te comparto mis ideas e informacion de contacto" />
-<meta name="keywords" content="Front end,CSS,HTML,JavaScript,Web,Portfolio,Desing,Developer,Programador,Creativo,Branding" />
-<meta name="author" content="Diego Fagundez" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIco -->
+    <link rel="icon" type="image/png" href="/img/cup.png" />
 
-<!-- <meta http-equiv="refresh" content="2"> Refrescar pagina cada 2 seg -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
-<!-- CSS downloaded icons -->
-<link rel="stylesheet" type="text/css" href="font/styles.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/css/main.css">
 
-<!-- CSS own styles -->
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-<link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/088850337f.js"></script>
 
-<!-- CSS from Animate.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<!-- Icons used from fontawesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Style Own -->
+    <link rel="stylesheet" href="css/styles.css">
 
-<title>Diego Fagundez | Freelancer</title>
-
-<!-- Temporal styles -->
-<style>
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
-.aviso{
-	display:none;
-	position:absolute;
-	font-size: 2em;
-	margin-left: -40px;
-	margin-top: 52px;
-	-webkit-transform: rotate(-30deg);
-	transform: rotate(-30deg);
-	z-index: 1000;
-	font-family: 'Zilla Slab Highlight', cursive;
-}
-
-</style>
 </head>
 <body>
 
-<!-- <div class="aviso">Page in construction</div> -->
+<!-- Navegacion -->
+<div class="main-box">
 
-<!-- Start main box -->
-<div class="box-main">
-	<!-- Start page header that contains the main menu -->
-	<header class="box-header">
-		<!-- Start box logo and social icons -->
-		<div class="box-logo">
-			<!-- logo and subtitle -->
-			<h1 class="box-title animated flipInY"><a>DIEGO FAGUNDEZ</a></h1>
-			<!-- <p class="box-txt">Analista QA | Freelancer</p> -->
+  <header class="nav-box">
+    <nav class="">
+      <img src="img/perfil2.jpg" alt="">
+      <h4 class="brand">Diego Fagundez</h4>
+      <div class="">
+        <a class="nav-link" href="/dfagundez/">INICIO</a>
+        <a class="nav-link disable" href="#">SOBRE MÍ</a>
+        <a class="nav-link" href="/dfagundez/trabajos/">TRABAJOS</a>
+        <a class="nav-link disable" href="#">BLOG</a>
+        <a class="nav-link" href="/dfagundez/contacto/">CONTACTO</a>
+      </div>
+    </nav>
+    <div class="box schedule empty">
+      <a href="https://www.dfagundez.com/" target="_blank"><div class="icon whatsapp reverse-schedule empty"><span class="fab fa-whatsapp"></span></div></a>
+      <a href="https://www.dfagundez.com/" target="_blank"><div class="icon linkedin reverse-schedule empty"><span class="fab fa-linkedin"></span></div></a>
+      <a href="https://www.dfagundez.com/" target="_blank"><div class="icon instagram reverse-schedule empty"><span class="fab fa-instagram"></span></div></a>
+      <a href="https://www.dfagundez.com/" target="_blank"><div class="icon twitter reverse-schedule empty"><span class="fab fa-twitter"></span></div></a>
+    </div>
 
-				<!-- Social network icons for header -->
-			<div class="box-social">	
-				<a href="//www.linkedin.com/in/dfagundez" class="link-social" target="_blank"><span class="icon-linkedin"></span></a>
-				<a href="//www.instagram.com/dfagundezz/" class="link-social" target="_blank"><span class="icon-instagram"></span></a>
-				<a href="//api.whatsapp.com/send?phone=541160518371&text=Hola,%20escribeme%20que%20te%20leo" class="link-social" target="_blank"><span class="icon-whatsapp"></span></a>
-				<a href="//twitter.com/dfagundez_" class="link-social" target="_blank"><span class="icon-twitter"></span></a>
-			</div>
-		</div><!-- End box logo and social icons -->
+    <footer class="footer-box">
+      <p>Desing by Diego Fagundez - © 2019</p>
+    </footer>
+  </header>
 
-		<!-- Start nav tag -->
-		<nav>
-			<!-- 'Start' Link -->
-			<div class="box-link animated bounceInLeft">
-				<h4>Start</h4>
-				<span id="btnStart" class="fas fa-grin-tongue"></span>
-			</div>
-			<!-- 'Me' Link -->
-			<div class="box-link animated bounceInLeft">
-				<h4>Me</h4>
-				<span id="btnMe" class="fas fa-brain"></span>
-			</div>
-			<!-- 'Ideas' Link -->
-			<div class="box-link animated bounceInUp">
-				<h4>Ideas</h4>
-				<span id="btnIdeas" class="fas fa-lightbulb"></span>
-			</div>
-			<!-- 'Blog' Link -->
-			<div class="box-link animated bounceInRight">
-				<h4>Blog</h4>
-				<span id="btnBlog" class="fas fa-laptop-code"></span>
-			</div>
-			<!-- 'Let's Talk' Link -->
-			<div class="box-link animated bounceInRight">
-				<h4>Let's Talk</h4>
-				<span id="btnTalk" class="fas fa-mug-hot"></span>
-			</div>
-		</nav><!-- End nav tag -->
+  <section class="section-box">
+    <div class="inicio">
+        <h1>¡Hola!</h1>
+        <p>Soy Diego</p>
+        <p>Diseño, creatividad y analisis, es lo que me gusta, y aca podes ver un poco a que me refiero.</p>
+        <p>Sentite libre de navegar por las distintas secciones para saber sobre mi, conocer las mis ideas y los trabajos que he realizado. ¡Pero basta de spoiler!, anda a verlo por tu cuenta que va a ser mas entretenido.</p>
+    </div>
+  </section>
 
-	</header><!-- Termina cabecera de pagica que contiene el menu principal -->
-
-	<!-- Start section tags -->
-	<!-- Start content
-	<section id="startModal" class="modal">
-		<div class="start-content">
-			<span id="startClose" class="close">&times;</span>
-			<h2>Bienvenido - Welcome</h2>
-			<img src="img/perfiillll.png" alt="">
-			<article>
-				<p>
-					Si estas acá es para conocer un poco sobre quien soy y que hago.<br/>
-					Recuerdo que aprendí a programar en C++, crear web sites en FrontPage y data bases en Access.
-				</p>
-				<br/>
-				<p>
-					Hoy me encuentro estudiando como autodidacta como la mayoría de mis colegas. Me apasionan todos
-					los lenguajes de programación pero en estos momentos estoy enfocado en Web Desing y Apps.<br/>
-					En los últimos meses me actualice en SQL, conocí conceptos de scrum y análisis funcional. También
-					aprendí los fundamentos del testing, todo esto para estar bien preparado para trabajar junto a vos.<br/>
-					Me encantaría que hablemos, si te interesa contar con mi creatividad y conocimientos no dudes en
-					contactarme y con mucho gusto hablamos un poco mas.
-					(Esta pagina esta en proceso de edicion puede tener faltas y errores)
-				</p>
-			</article>
-		</div>
-	</section> End start content -->
-
-	<!-- Me content
-	<section id="meModal" class="modal">
-		Me content
-		<div class="me-content">
-			<span id="meClose" class="close">&times;</span>
-			<h2>ME</h2>
-			<p>Some text in the Me Modal..</p>
-		</div>
-	</section> End me content -->
-
-	<!-- Ideas content 
-	<section id="ideasModal" class="modal">
-		Ideas content 
-		<div class="ideas-content">
-			<span id="ideasClose" class="close">&times;</span>
-			<h2>IDEAS</h2>
-			<p>Some text in the Ideas Modal..</p>
-		</div>
-	</section> End ideas content -->
-
-	<!-- Blog content 
-	<section id="blogModal" class="modal">
-		Blog content 
-		<div class="blog-content">
-			<span id="blogClose" class="close">&times;</span>
-			<h2>BLOG</h2>
-			<p>Some text in the Blog Modal..</p>
-		</div>
-	</section> End blog content -->
-
-	<!-- Talk content 
-	<section id="talkModal" class="modal">
-		 Let's Talk content 
-		<div class="talk-content">
-			<span id="talkClose" class="close">&times;</span>
-			<h2>LET'S TALK</h2>
-			<p>Some text in the Let's Talk Modal..</p>
-		</div>
-	</section> End talk content -->
+</div>
 
 
-	<!-- Start footer tag -->
-	<footer class="box-footer">
+<!-- Scripts Own -->
+<script src="js/scripts.js"></script>
+<script type="text/javascript">
 
-		<div class="box-copy-footer">
-			<p>
-			All the services provided by Diego Fagundez are subject to a technical and geographical
-			availability within the terrestrial territory. All rights reserved®.
-			<br>
-			Ricardo Rojas 1783, Grand Bourg, Province of Buenos Aires Telephone: 15 6051 8371
-			</p>
-		</div>
-
-		<div class="box-social-footer">
-			<a class="footer-social">Pendiente de edicion.</a>
-			<a class="footer-social">Gracias por tu visita</a>
-		</div>
-
-	</footer><!-- End footer tag -->
-
-<!-- Scrips -->
-<script src="/scripts/modal.js" charset="utf-8"></script>
-
-</div><!-- End main box -->
+</script>
 </body>
 </html>
