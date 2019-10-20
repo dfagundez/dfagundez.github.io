@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #464646;
+    color: #464646;
+    font-family: "Quicksand", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #464646;
+}
+
+img{
+    width: 150px;
+    border-radius: .2rem;
+    margin: 30px 0px 0px 0px;
+    transition: all 1s;
+}
+
+.links{
+    margin: 20px 0px 20px 0px;
+}
+
+.links a{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.links a:hover{
+    border-bottom: 1px solid;
+}
+
+#version{
+    position: absolute;
+    font-size: .6rem;
+    top: 5px;
+    right: 5px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    border-radius: .2rem;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.social-box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+footer{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    font-size: .6rem;
+    padding: 4px;
+    bottom: 0px;
+    text-align: center;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
