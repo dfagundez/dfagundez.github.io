@@ -1,67 +1,193 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Bienvenido a mi pagina de presentacion, te comparto mis ideas e informacion de contacto" />
-    <meta name="keywords" content="Front end,CSS,HTML,JavaScript,Web,Portfolio,Desing,Developer,Programador,Creativo,Branding" />
-    <meta name="author" content="Diego Fagundez" />
+    <link rel="shortcut icon" href="rocket.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/smooth-scroll.min.js"></script>
     <title>Diego Fagundez</title>
-
-    <!-- FavIco -->
-    <link rel="icon" type="image/ico" href="static/img/dfagundez.ico" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/088850337f.js"></script>
-
-    <!-- Own Styles -->
-    <link rel="stylesheet" href="static/css/styles.css">
-
 </head>
 <body>
-    <!-- Main Box -->
     <main>
-        <p id="version">v 1.0</p>
 
-        <!-- Header Box -->
-        <header class="nav-box">
-            <h2 class="brand">Diego Fagundez</h2>
-            <p>Analista QA | Diseñador Web</p>
-
-            <img class="img" src="static/img/profile.png" alt="Diego Fagundez">
-
-            <div class="links">
-                <h4>¡Descarga mi curriculum!</h3>
-                <a href="https://mega.nz/#!pzQXTI5B" target="_blank">Tema oscuro</a>
-                <a href="https://mega.nz/#!NvYj2IQR" target="_blank">Tema claro</a>
+        <!-- Home -->
+        <div id="home" class="box-home">
+            <nav>
+                <ul>
+                    <li><a data-scroll href="#design">Design</a></li>
+                    <li><a data-scroll href="#automation">Automation</a></li>
+                    <li><a data-scroll href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="presentation">
+                <p>
+                    Hello.<br>
+                    I am<br>
+                    Diego
+                </p>
             </div>
+        </div>
 
-            <!-- Social Box -->
-            <div class="social-box">
-                <a href="https://api.whatsapp.com/send?phone=1160518371&text=Me%20gustar%C3%ADa%20contactarte%20por%20una%20propuesta." target="_blank"><div class="icon"><span class="fab fa-whatsapp"></span></div></a>
-                <a href="https://www.linkedin.com/in/dfagundez/" target="_blank"><div class="icon"><span class="fab fa-linkedin"></span></div></a>
-                <a href="https://www.instagram.com/dfagundez/" target="_blank"><div class="icon"><span class="fab fa-instagram"></span></div></a>
-                <a href="https://twitter.com/dfagundez_" target="_blank"><div class="icon"><span class="fab fa-twitter"></span></div></a>
+        <!-- Design -->
+        <div id="design" class="box-design">
+
+            <div class="box-design-img">
+                <img src="img/design1.png">
             </div>
-
-        </header>
-        
-
-        <!-- Footer Box -->
-        <footer class="footer-box">
-            <div>
-                <p>Copyright © 2019 Diego Fagundez. All rights reserved.</p>
+            
+            <div class="box-design-info">
+                <div><h1>Web Design Tips</h1></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, accusamus. Blanditiis architecto molestiae excepturi eius! Enim dicta provident consequatur non, voluptate tenetur numquam accusamus tempore minima eaque libero labore iusto.</p></div>
+                <div><code>#html5, #css3, #javascript #boostrap, #responsive</code></div>
+                <br>
+                <!-- <div>
+                    <a href="">Back</a>
+                    <a href="">Next</a>
+                </div> -->
             </div>
+            
+        </div>
+
+        <div id="automation" class="box-automations">
+            <section class="automations">
+
+                <h1>My Repositories in Git Hub</h1>
+                <div class="card-automations">
+                    <h3>
+                        AutomatizacionInicioProyectoGit
+                    </h3>
+                    <p>
+                        Script to automatically start a project. Create the directory, create the repository and the first commit is made.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Language used:</strong> Python
+                    </p>
+                    <br>
+                    <a href="https://github.com/dfagundez/AutomatizacionInicioProyectoGit">Go to repository</a>
+                </div>
+
+                <div class="card-automations">
+                    <h3>
+                        ExercisesWithPython
+                    </h3>
+                    <p>
+                        Performing algorithm practices with flowchart this code arises. It is simply a system to enter employees and calculate salary to pay.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Language used:</strong> Python
+                    </p>
+                    <br>
+                    <a href="https://github.com/dfagundez/ExercisesWithPython">Go to repository</a>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="resume" class="box-resume">
+            <h1>Loremp</h1>
+            <section  class="resume">
+                
+                <div class="card-resume">
+                    <div>
+                        <h2>QA Analist</h2>
+                    </div>
+                    <div class="box-icon-resume">
+                        <span class="fas fa-bug icon-resume"></span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Reiciendis itaque voluptates officia fuga quia eius, sint 
+                            iste totam consequatur reprehenderit asperiores perspiciatis, 
+                            provident debitis laboriosam corrupti magni labore, eveniet error!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-resume">
+                    <div>
+                        <h2>Web Designer</h2>
+                    </div>
+                    <div class="box-icon-resume">
+                        <span class="fas fa-palette icon-resume"></span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Reiciendis itaque voluptates officia fuga quia eius, sint 
+                            iste totam consequatur reprehenderit asperiores perspiciatis, 
+                            provident debitis laboriosam corrupti magni labore, eveniet error!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-resume">
+                    <div>
+                        <h2>Creative</h2>
+                    </div>
+                    <div class="box-icon-resume">
+                        <span class="fab fa-medapps icon-resume"></span>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Reiciendis itaque voluptates officia fuga quia eius, sint 
+                            iste totam consequatur reprehenderit asperiores perspiciatis, 
+                            provident debitis laboriosam corrupti magni labore, eveniet error!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            Copyright © 2019 Diego Fagundez - All rights reserved -
+            dfagundezz@gmail.com - 1160518371
         </footer>
 
     </main>
+    <a id="rocket" href="#home"></a>
+    <a id="fire" class="flame" href=""></a>
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="static/js/scripts.js"></script>
+    <script>
+
+    // Funcionalidad para el boton de volver a Home
+    var btn = document.getElementById("rocket");
+
+    btn.addEventListener("click", takeOff, true);
+
+    function takeOff(){
+        document.getElementById("rocket").style.animation = "rocket 2s";
+        document.getElementById("fire").style.animation = "fire 2s, flame .1s infinite";
+        document.getElementById("fire").style.display = "block";
+
+    setTimeout(function refresh(){
+            document.getElementById("rocket").style.animation = "paused";
+            document.getElementById("fire").style.animation = "fire 2s paused, flame .1s paused";
+            document.getElementById("fire").style.display = "none";
+        }, 3000)
+    }
+
+    // Funcionalidad para animacion al pasar de una seccion a otra
+    var scroll = new SmoothScroll('a[href*="#design"]', {
+        speed: 800,
+        speedAsDuration: true
+    });
+    var scroll = new SmoothScroll('a[href*="#automation"]', {
+        speed: 800,
+        speedAsDuration: true
+    });
+    var scroll = new SmoothScroll('a[href*="#resume"]', {
+        speed: 800,
+        speedAsDuration: true
+    });
+    var scroll = new SmoothScroll('a[href*="#home"]', {
+        speed: 1900,
+        speedAsDuration: true
+    });
+
+
+    </script>
+    
 </body>
 </html>
