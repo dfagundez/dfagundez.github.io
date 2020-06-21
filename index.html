@@ -1,198 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Perfil profesioal de Diego Fagundez">
+    <meta name="keywords" content="Diseño Web, Testing, QA, Analisis, Funcional">
+    <meta name="author" content="Diego Fagundez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="rocket.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="js/smooth-scroll.min.js"></script>
     <title>Diego Fagundez</title>
 </head>
+
 <body>
     <main>
-
-        <!-- Home -->
-        <div id="home" class="box-home">
-            <nav>
-                <ul>
-                    <li><a data-scroll href="#design">Presentación</a></li>
-                    <li><a data-scroll href="#automation">Portafolio</a></li>
-                    <li><a data-scroll href="#resume">Sobre Mí</a></li>
-                </ul>
-            </nav>
-            <div class="presentation">
-                <p>
-                    Hola.<br>
-                    Yo soy<br>
-                    Diego
-                </p>
-            </div>
+        <div class="box box-left"></div>
+        <div class="circle circle-left"></div>
+        <div class="welcome">
+            <h1><a href="#" class="btn">Diego Fagundez</a></h1>
+            <ul class="links">
+                <li><a href="/files/Diego Fagundez.pdf">Curriculum</a></li>
+                <li><a href="https://github.com/dfagundez/">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/dfagundez/">Linkedin</a></li>
+                <li><a href="https://wa.link/2wjlzb">Whatsapp</a></li>
+            </ul>
         </div>
-
-        <!-- Design -->
-        <div id="design" class="box-design">
-
-            <div class="box-design-img">
-                <img src="img/profile2.jpeg">
-            </div>
-            
-            <div class="box-design-info">
-                <div><h1>Presentación</h1></div>
-                <div>
-                    <p>Diseñar, crear y motivar me encanta. Me considero geek, amante de la música y la innovación.</p>
-                    <br>
-                    <p>Actualmente estoy trabajando como Tester para Glamit, una empresa de e-commerce.</p>
-                </div>
-                <br>
-                <p>Algunos de mis conocimientos son:</p>
-                <div><code>#html5, #css3, #javascript #boostrap, #responsive, #postman, #api, #webservices, #python, #agile, #angular, #selenium</code></div>
-                <br>
-                <div>
-                    <a href="https://www.linkedin.com/in/dfagundez/" target="_blank">Linkedin</a>
-                    |
-                    <a href="/files/Diego Fagundez.pdf" target="_blank">Curriculum</a>
-                </div>
-            </div>
-            
-        </div>
-
-        <div id="automation" class="box-automations">
-            <section class="automations">
-
-                <h1>Mis Repositorios en GitHub</h1>
-                <div class="card-automations">
-                    <h3>
-                        Automatizacion para iniciar proyecto en git.
-                    </h3>
-                    <p>
-                        Esta automatizacion da inicio a un proyecto. Primero crea un directorio para el proyecto, crea el repositorio y luego realiza el primer commit.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>Tecnolgoías utilizadas:</strong> #Python, #Selenium
-                    </p>
-                    <br>
-                    <a href="https://github.com/dfagundez/AutomatizacionInicioProyectoGit">Ir al Repositorio</a>
-                </div>
-
-                <div class="card-automations">
-                    <h3>
-                        Ejercicio con condicionales en Python.
-                    </h3>
-                    <p>
-                        En este ejercicio practico pasar a codigo un algoritmo realizado con la simbologia de diagramacion de flujo.
-                    </p>
-                    <br>
-                    <p>
-                        <strong>Tecnologías utilizadas:</strong> #Python
-                    </p>
-                    <br>
-                    <a href="https://github.com/dfagundez/ExercisesWithPython">Ir al Repositorio</a>
-                </div>
-
-            </section>
-        </div>
-
-        <div id="resume" class="box-resume">
-            <h1>Sobre Mí</h1>
-            <section  class="resume">
-                
-                <div class="card-resume">
-                    <div>
-                        <h2>Testing</h2>
-                    </div>
-                    <div class="box-icon-resume">
-                        <span class="fas fa-bug icon-resume"></span>
-                    </div>
-                    <div>
-                        <p>
-                            Actualmente ocupo mayor parte de mi tiempo para realizar tareas relacionadas testing.
-                            Si bien estoy investigando como implementar automatizaciones por mi cuenta, las pruebas
-                            que realizo hasta el momento son manuales.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card-resume">
-                    <div>
-                        <h2>Diseño Web</h2>
-                    </div>
-                    <div class="box-icon-resume">
-                        <span class="fas fa-palette icon-resume"></span>
-                    </div>
-                    <div>
-                        <p>
-                            Cuando no estoy trabajando en testing estoy investigando distintas tecnologias utilizadas
-                            para el diseño web, desde el backend al frontend. Tambien me gusta ver mucho sobre UX/UI.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card-resume">
-                    <div>
-                        <h2>Creatividad</h2>
-                    </div>
-                    <div class="box-icon-resume">
-                        <span class="fab fa-medapps icon-resume"></span>
-                    </div>
-                    <div>
-                        <p>
-                            Concidero que soy una persona altamente creativa a la hora de generar soluciones
-                            para resolver distintos problemas y encarar distintos proyectos.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer>
-            Copyright © 2020 Diego Fagundez - All rights reserved -
-            dfagundezz@gmail.com - 1160518371
-        </footer>
-
+        <div class="box box-rigth"></div>
+        <div class="circle circle-right"></div>
     </main>
-    <a id="rocket" href="#home"></a>
-    <a id="fire" class="flame" href=""></a>
 
     <script>
+        const btn = document.querySelector('.btn');
+        const circle = document.querySelector('.circle-right');
+        const links = document.querySelector('.links');
 
-    // Funcionalidad para el boton de volver a Home
-    var btn = document.getElementById("rocket");
-
-    btn.addEventListener("click", takeOff, true);
-
-    function takeOff(){
-        document.getElementById("rocket").style.animation = "rocket 2s";
-        document.getElementById("fire").style.animation = "fire 2s, flame .1s infinite";
-        document.getElementById("fire").style.display = "block";
-
-    setTimeout(function refresh(){
-            document.getElementById("rocket").style.animation = "paused";
-            document.getElementById("fire").style.animation = "fire 2s paused, flame .1s paused";
-            document.getElementById("fire").style.display = "none";
-        }, 3000)
-    }
-
-    // Funcionalidad para animacion al pasar de una seccion a otra
-    var scroll = new SmoothScroll('a[href*="#design"]', {
-        speed: 800,
-        speedAsDuration: true
-    });
-    var scroll = new SmoothScroll('a[href*="#automation"]', {
-        speed: 800,
-        speedAsDuration: true
-    });
-    var scroll = new SmoothScroll('a[href*="#resume"]', {
-        speed: 800,
-        speedAsDuration: true
-    });
-    var scroll = new SmoothScroll('a[href*="#home"]', {
-        speed: 1900,
-        speedAsDuration: true
-    });
-
-
+        btn.addEventListener('click', () => {
+            circle.classList.remove('animate')
+            setTimeout(() => circle.classList.add('animate'), 100)
+            setTimeout(() => links.style.display = 'flex', 300)
+        })
     </script>
-    
 </body>
 </html>
