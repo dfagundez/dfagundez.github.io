@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+
+    <title>Diego Fagundez</title>
+
     <meta name="description" content="Perfil profesioal de Diego Fagundez">
     <meta name="keywords" content="Diseño Web, Testing, QA, Analisis, Funcional">
     <meta name="author" content="Diego Fagundez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="rocket.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Diego Fagundez</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">    
+
 </head>
-
 <body>
-    <main>
-        <div class="box box-left"></div>
-        <div class="circle circle-left"></div>
-        <div class="welcome">
-            <h1><a href="#" class="btn">Diego Fagundez</a></h1>
-            <ul class="links">
-                <li><a href="/files/Diego Fagundez.pdf">Curriculum</a></li>
-                <li><a href="https://github.com/dfagundez/">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/dfagundez/">Linkedin</a></li>
-                <li><a href="https://wa.link/2wjlzb">Whatsapp</a></li>
-            </ul>
+  <div class="wrapper">
+        <div class="coming">
+           <div class="container">
+               <div class=" row">
+                   <div class="col-md-12">
+                       <h2>{COMING SOOM}</h2>
+                       <p>I will be back in...</p>
+                   </div>
+               </div>
+           </div>
         </div>
-        <div class="box box-rigth"></div>
-        <div class="circle circle-right"></div>
-    </main>
+        <div id="countdown"></div>
 
-    <script>
-        const btn = document.querySelector('.btn');
-        const circle = document.querySelector('.circle-right');
-        const links = document.querySelector('.links');
+        <!-- <div class="email">
+           <div class="container">
+               <div class=" row">
+                   <div class="col-md-12">
+                       <p>GET NOTIFIED AT LAUNCH</p>
+                        <input id="email" type="email" placeholder="email adress....">
+                        <input id="btn" type="submit" value="Go" onclick="save_email()">
+                   </div>
+               </div>
+           </div>
+        </div> -->
 
-        btn.addEventListener('click', () => {
-            circle.classList.remove('animate')
-            setTimeout(() => circle.classList.add('animate'), 100)
-            setTimeout(() => links.style.display = 'flex', 300)
-        })
-    </script>
+        <div class="social-icon">
+            <div class="container">
+                <div class=" row">
+                   <div class="col-md-12">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/dfagundez/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://wa.link/srmwqd" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/dfagundezz" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://github.com/dfagundez" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.countdown.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/active.js"></script>
 </body>
 </html>
