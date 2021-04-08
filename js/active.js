@@ -1,5 +1,5 @@
 $(function () {
-  var countDownDate = new Date("Dic 31, 2021 10:00:00");
+  var countDownDate = new Date("Dec 31, 2021 10:00:00");
   $("#countdown").countdown({
     timestamp: countDownDate,
     callback: function (days, hours, minutes, seconds) {
