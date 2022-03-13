@@ -2,70 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <title>Diego Fagundez</title>
-
-    <meta name="description" content="Perfil profesioal de Diego Fagundez">
-    <meta name="keywords" content="Diseño Web, Testing, QA, Analisis, Funcional">
-    <meta name="author" content="Diego Fagundez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="rocket.ico" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Rock+Salt&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.countdown.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">    
-
+    <meta name="description" content="Professional profile of Diego Fagundez, Software QA Engineer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Typescript, Node, Python, Java, Selenium, Postman, Cypress, Cucumber, Scrum, Agile, TestNG">
+    <meta name="author" content="Diego Fagundez">
+    <link rel="shortcut icon" href="./rocket.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Diego Fagundez</title>
 </head>
 <body>
-  <div class="wrapper">
-        <div class="coming">
-           <div class="container">
-               <div class=" row">
-                   <div class="col-md-12">
-                       <h2>{COMING SOOM}</h2>
-                       <p>I will be back in...</p>
-                   </div>
-               </div>
-           </div>
-        </div>
-        <div id="countdown"></div>
-
-        <!-- <div class="email">
-           <div class="container">
-               <div class=" row">
-                   <div class="col-md-12">
-                       <p>GET NOTIFIED AT LAUNCH</p>
-                        <input id="email" type="email" placeholder="email adress....">
-                        <input id="btn" type="submit" value="Go" onclick="save_email()">
-                   </div>
-               </div>
-           </div>
-        </div> -->
-
-        <div class="social-icon">
-            <div class="container">
-                <div class=" row">
-                   <div class="col-md-12">
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/dfagundez/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://wa.link/srmwqd" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/dfagundezz" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="https://github.com/dfagundez" target="_blank"><i class="fa fa-github"></i></a>
-                        </div>
-                   </div>
-                </div>
+    <main>
+        <!-- Here starts the Home screen -->
+        <div id="home" class="box-home primary-background">
+            <nav>
+                <ul>
+                    <li><a data-scroll href="#home">Home</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#services">Services</a></li>
+                    <li><a data-scroll href="#experience">Experience</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="presentation">
+                <p>
+                    Hello.<br>
+                    I am<br>
+                    <span>Diego</span>
+                </p>
             </div>
         </div>
-    </div>
-	<script src="https://code.jquery.com/jquery-git.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="js/active.js"></script>
+        <!-- Here starts the About screen -->
+        <div id="about" class="box-about primary-background">
+            <section>
+                <img src="./img/profile_image.jpg" alt="profile_picture">
+                <p>
+                    I love designing, creating and motivating. I love music, technology, summoning and challenges.<br>
+                    These last 3 years I have been working on software quality, focusing mainly on manual tests, functional tests and test automation at the user interface and services level.<br>
+                    I am currently working as a Software QA Engineer for Kavak.
+                </p>
+            </section>
+        </div>
+        <!-- Here starts the Services screen -->
+        <div id="services" class="box-services primary-background">
+            <section class="services">
+                <p>
+                    This<br>
+                    is still<br>
+                    under construction🧉
+                </p>
+            </section>
+        </div>
+        <!-- Here starts the Experience screen -->
+        <div id="experience" class="box-experience primary-background">
+            <section  class="experience">
+                <h2>Experience</h2>
+                <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card text-center experience-card">
+                            <div class="card-header">
+                              GLAMIT<br>
+                              360 e-commerce services
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">QA Analyst</h5>
+                              <p class="card-text">
+                                - Design and execution of tests<br>
+                                - Automation framework development<br>
+                                - Automated tests with postman<br>
+                                - Feature documentation<br>
+                                - Process documentation</p>
+                              <a href="https://www.glamit.com.ar/" target="_blank" class="btn btn-dark">Go to web site</a>
+                            </div>
+                            <div class="card-footer">
+                                2019-02-05 - 2021-11-30
+                            </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card text-center experience-card">
+                            <div class="card-header">
+                              KAVAK<br>
+                              Leading e-commerce dedicated to buying, selling and financing used cars in the world
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Software QA Engineer</h5>
+                              <p class="card-text">
+                                - Design and execution of tests<br>
+                                - Test automation<br>
+                                - Feature documentation<br>
+                                - Process documentation<br>
+                                - Implementation of tools for quality management</p>
+                              <a href="https://www.kavak.com/ar" target="_blank" class="btn btn-dark">Go to web site</a>
+                            </div>
+                            <div class="card-footer">
+                              2021-12-01 - Currently working here
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+        </div>
+        <!-- Here starts the Contact screen -->
+        <div id="contact" class="box-contact primary-background">
+            <section>
+                <div id="box-social">
+                  <h2>Social Networks</h2>
+                    <ul class="social">
+                        <a href="https://twitter.com/dfagundez_" target="_blank"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+                        <a href="https://api.whatsapp.com/send?phone=+5491160518371&text=Hello, I got your contact from your website :)" target="_blank"><li><i class="fa fa-whatsapp" aria-hidden="true"></i></li></a>
+                        <a href="https://www.instagram.com/dfagundezz/" target="_blank"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                        <a href="https://www.linkedin.com/in/dfagundez/" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                        <a href="https://github.com/dfagundez" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+                        <a href="https://gitlab.com/dfagundezz" target="_blank"><li><i class="fa fa-gitlab" aria-hidden="true"></i></li></a>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Rocket Elements -->
+    <a id="rocket" href="#home"></a>
+    <a id="fire" class="flame" href=""></a>
+    <!-- Scripts -->
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
