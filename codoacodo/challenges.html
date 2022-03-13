@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate The Area Of a Circle</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background: #00b4db; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #0083b0,
+          #00b4db
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #0083b0,
+          #00b4db
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      main {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1"
+            >Challenges Codo a Codo 2022 🤘</span
+          >
+        </div>
+      </nav>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Challenge #2
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong
+                >Elaborar un sitio web simple que permita pedir por pantalla un
+                radio (numérico) y muestre en la pantalla el resultado del área
+                del círculo.</strong
+              >
+              <br />
+              <br />
+              Realizar el código necesario para que según el valor ingresado por
+              pantalla valide y pida nuevamente el dato en caso de que: 1) Sea
+              un valor negativo, indicándole al usuario que el radio no es
+              valido y que debe ser un valor positivo.<br />
+              2) Si el valor es mayor a 100, indicar que el rango supera la
+              capacidad de calculo y debe elegir entre 0 y 100.<br /><br />
+              La validación debe ser interna, por lo cual es necesario armar una
+              estructura, podes averiguar cómo armarla. A su vez podrías repetir
+              el mismo proceso para validar el área de un triangulo rectángulo,
+              pidiendo los datos de base y altura. Si es posible usa un contador
+              para indicar cuantas veces se ejecutó.
+              <hr />
+              <h2>Calcular area de un circulo</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="inputRadio" class="form-label"
+                    >¿Cual es el radio?</label
+                  >
+                  <input type="text" class="form-control" id="inputRadio" />
+                  <div id="helpCircleArea" class="form-text">
+                    El valor del radio no puede ser negativo o mayor a 100
+                  </div>
+                  <div id="countCircleAreaUses"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="checkRound"
+                    />
+                    <label class="form-check-label" for="checkRound">
+                      ¿Quiere recibir el resultado redondeado a 2 decimales?
+                    </label>
+                  </div>
+                </div>
+                <div id="circleAreaResult" style="font-size: 1.5rem">
+                  Aquí se mostrara el resultado 🤓
+                </div>
+                <br />
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="calculateCircleArea()"
+                  >Calcular</a
+                >
+              </form>
+              <hr />
+              <h2>Calcular area de un triangulo rectangulo</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="inputBase" class="form-label"
+                    >¿Cual es la base?</label
+                  >
+                  <input type="text" class="form-control" id="inputBase" />
+                  <div id="helpForInputBase" class="form-text">
+                    El valor de la base no puede ser negativo o mayor a 100
+                  </div>
+                  <div id="countRightTriangleAreaUses"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="inputAltura" class="form-label"
+                    >¿Cual es la altura?</label
+                  >
+                  <input type="text" class="form-control" id="inputAltura" />
+                  <div id="helpForInputAltura" class="form-text">
+                    El valor de la altura no puede ser negativo o mayor a 100
+                  </div>
+                  <div id="countRightTriangleAreaUses"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="checkRoundRightTriangleArea"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="checkRoundRightTriangleArea"
+                    >
+                      ¿Quiere recibir el resultado redondeado a 2 decimales?
+                    </label>
+                  </div>
+                </div>
+                <div id="rightTriangleAreaResult" style="font-size: 1.5rem">
+                  Aquí se mostrara el resultado 🤓
+                </div>
+                <br />
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="calculateRightTriangleArea()"
+                  >Calcular</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Challenge #3
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Pending...</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Challenge #4
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>Pending...</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var countCircleArea = 0;
+      var countRightTriangleArea = 0;
+      function roundFloatNumber(number) {
+        return Math.round((number + Number.EPSILON) * 100) / 100;
+      }
+      function calculateCircleArea() {
+        const radio = document.getElementById("inputRadio");
+        const result = document.getElementById("circleAreaResult");
+        const round = document.getElementById("checkRound");
+        const countResult = document.getElementById("countCircleAreaUses");
+
+        if (countCircleArea > 10 && countCircleArea < 100) {
+          countResult.innerHTML = `Has calculado ${++countCircleArea} areas de circulos!!!, te volviste loquetaaaa!!! 😲`;
+        } else if (countCircleArea > 99) {
+          countResult.innerHTML = `Has calculado ${++countCircleArea} areas de circulos!!!, 🤯`;
+        } else {
+          countResult.innerHTML = `Has calculado ${++countCircleArea} areas de circulos... o almenos lo intentaste 😎`;
+        }
+
+        if (radio.value < 0) {
+          result.innerHTML =
+            "Por favor, esto es algo serio. Ingresa un numero mayor a 0... 🙄";
+        } else if (!radio.value || isNaN(radio.value)) {
+          result.innerHTML =
+            "Hey bro!.. or sis, or whatever... ingresa un numero valido porfa... 😒";
+        } else if (radio.value > 100) {
+          result.innerHTML =
+            "¿Te fumaste o que?, ¿no leiste?. No puede ser mayor a 100... 😖";
+        } else {
+          const area = Math.PI * radio.value ** 2;
+          if (round.checked) {
+            const messageResult = `<strong>El área del circulo es:  </strong>${roundFloatNumber(
+              area
+            )}`;
+            result.innerHTML = messageResult;
+          } else {
+            const messageResult = `<strong>El área del circulo es:  </strong>${area}`;
+            result.innerHTML = messageResult;
+          }
+        }
+      }
+
+      function calculateRightTriangleArea() {
+        const areaResultado = document.getElementById(
+          "rightTriangleAreaResult"
+        );
+        const base = document.getElementById("inputBase");
+        const altura = document.getElementById("inputAltura");
+        const round = document.getElementById("checkRoundRightTriangleArea");
+        const countResult = document.getElementById(
+          "countRightTriangleAreaUses"
+        );
+
+        if (countRightTriangleArea > 10 && countRightTriangleArea < 100) {
+          countResult.innerHTML = `Has calculado ${++countRightTriangleArea} areas de triangulos rectangulos!!!, te volviste loquetaaaa!!! 😲`;
+        } else if (countRightTriangleArea > 99) {
+          countResult.innerHTML = `Has calculado ${++countRightTriangleArea} areas de triangulos rectangulos!!!, 🤯`;
+        } else {
+          countResult.innerHTML = `Has calculado ${++countRightTriangleArea} areas de triangulos rectangulos... o almenos lo intentaste 😎`;
+        }
+
+        if (base.value < 0 || altura.value < 0) {
+          areaResultado.innerHTML =
+            "Por favor, esto es algo serio. Ingresa un numero mayor a 0... 🙄";
+        } else if (
+          !base.value ||
+          isNaN(base.value) ||
+          !altura.value ||
+          isNaN(altura.value)
+        ) {
+          areaResultado.innerHTML =
+            "Hey bro!.. or sis, or whatever... ingresa un numero valido porfa... 😒";
+        } else if (base.value > 100 || altura.value > 100) {
+          areaResultado.innerHTML =
+            "¿Te fumaste o que?, ¿no leiste?. No puede ser mayor a 100... 😖";
+        } else {
+          const area = (base.value * altura.value) / 2;
+          if (round.checked) {
+            const messageResult = `<strong>El área del circulo es:  </strong>${roundFloatNumber(
+              area
+            )}`;
+            areaResultado.innerHTML = messageResult;
+          } else {
+            const messageResult = `<strong>El área del circulo es:  </strong>${area}`;
+            areaResultado.innerHTML = messageResult;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
