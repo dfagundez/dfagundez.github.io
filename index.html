@@ -3,140 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional profile of Diego Fagundez, Software QA Engineer">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Typescript, Node, Python, Java, Selenium, Postman, Cypress, Cucumber, Scrum, Agile, TestNG">
+    <meta name="description" content="Diego Fagundez - Software QA Engineer | Minimalist portfolio inspired by Japanese aesthetics and nature">
+    <meta name="keywords" content="Diego Fagundez, Software QA Engineer, Test Automation, Quality Assurance, Developer">
     <meta name="author" content="Diego Fagundez">
-    <link rel="shortcut icon" href="./rocket.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./favicon-option4.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Diego Fagundez</title>
+    <title>Diego Fagundez | Software QA Engineer</title>
 </head>
 <body>
-    <main>
-        <!-- Here starts the Home screen -->
-        <div id="home" class="box-home primary-background">
-            <nav>
-                <ul>
-                    <li><a data-scroll href="#home">Home</a></li>
-                    <li><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#services">Services</a></li>
-                    <li><a data-scroll href="#experience">Experience</a></li>
-                    <li><a data-scroll href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="presentation">
-                <p>
-                    Hello.<br>
-                    I am<br>
-                    <span>Diego</span>
-                </p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">DF</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting-container">
+                    <p class="hero-greeting" data-meaning="Hello · Konnichiwa">こんにちは</p>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Diego</span>
+                    <span class="hero-title-line">Fagundez</span>
+                </h1>
+                <p class="hero-subtitle">Software QA Engineer</p>
+                <div class="hero-decoration"></div>
             </div>
         </div>
-        <!-- Here starts the About screen -->
-        <div id="about" class="box-about primary-background">
-            <section>
-                <img src="./img/profile_image.jpg" alt="profile_picture">
-                <p>
-                    I love designing, creating and motivating. I love music, technology, summoning and challenges.<br>
-                    These last 3 years I have been working on software quality, focusing mainly on manual tests, functional tests and test automation at the user interface and services level.<br>
-                    I am currently working as a Software QA Engineer for Kavak.
-                </p>
-            </section>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
-        <!-- Here starts the Services screen -->
-        <div id="services" class="box-services primary-background">
-            <section class="services">
-                <p>
-                    This<br>
-                    is still<br>
-                    under construction🧉
-                </p>
-            </section>
-        </div>
-        <!-- Here starts the Experience screen -->
-        <div id="experience" class="box-experience primary-background">
-            <section  class="experience">
-                <h2>Experience</h2>
-                <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="card text-center experience-card">
-                            <div class="card-header">
-                              GLAMIT<br>
-                              360 e-commerce services
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">QA Analyst</h5>
-                              <p class="card-text">
-                                - Design and execution of tests<br>
-                                - Automation framework development<br>
-                                - Automated tests with postman<br>
-                                - Feature documentation<br>
-                                - Process documentation</p>
-                              <a href="https://www.glamit.com.ar/" target="_blank" class="btn btn-dark">Go to web site</a>
-                            </div>
-                            <div class="card-footer">
-                                2019-02-05 - 2021-11-30
-                            </div>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card text-center experience-card">
-                            <div class="card-header">
-                              KAVAK<br>
-                              Leading e-commerce dedicated to buying, selling and financing used cars in the world
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">Software QA Engineer</h5>
-                              <p class="card-text">
-                                - Design and execution of tests<br>
-                                - Test automation<br>
-                                - Feature documentation<br>
-                                - Process documentation<br>
-                                - Implementation of tools for quality management</p>
-                              <a href="https://www.kavak.com/ar" target="_blank" class="btn btn-dark">Go to web site</a>
-                            </div>
-                            <div class="card-footer">
-                              2021-12-01 - Currently working here
-                            </div>
-                          </div>
-                      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I am a Software QA Engineer passionate about quality, simplicity, and continuous improvement.
+                    </p>
+                    <p>
+                        With over 3 years of experience in software quality assurance, I specialize in manual testing, 
+                        functional testing, and test automation at both UI and service levels. I believe in the philosophy 
+                        of <em>kaizen</em> (continuous improvement) and apply it to every aspect of my work.
+                    </p>
+                    <p>
+                        Currently, I'm contributing to Kavak's mission of transforming the used car market, 
+                        ensuring quality through rigorous testing and automation frameworks.
+                    </p>
+                    <div class="about-skills">
+                        <span class="skill-tag">Test Automation</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Cypress</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Cucumber</span>
+                        <span class="skill-tag">Agile/Scrum</span>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
-        </div>
-        <!-- Here starts the Contact screen -->
-        <div id="contact" class="box-contact primary-background">
-            <section>
-                <div id="box-social">
-                  <h2>Social Networks</h2>
-                    <ul class="social">
-                        <a href="https://twitter.com/dfagundez_" target="_blank"><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
-                        <a href="https://api.whatsapp.com/send?phone=+5491160518371&text=Hello, I got your contact from your website :)" target="_blank"><li><i class="fa fa-whatsapp" aria-hidden="true"></i></li></a>
-                        <a href="https://www.instagram.com/dfagundezz/" target="_blank"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
-                        <a href="https://www.linkedin.com/in/dfagundez/" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-                        <a href="https://github.com/dfagundez" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-                        <a href="https://gitlab.com/dfagundezz" target="_blank"><li><i class="fa fa-gitlab" aria-hidden="true"></i></li></a>
-                    </ul>
                 </div>
-            </section>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./img/profile_image.jpg" alt="Diego Fagundez">
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
-    <!-- Rocket Elements -->
-    <a id="rocket" href="#home"></a>
-    <a id="fire" class="flame" href=""></a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Software QA Engineer</h3>
+                        <h4 class="timeline-company">Kavak</h4>
+                        <p class="timeline-description">
+                            Leading e-commerce platform dedicated to buying, selling, and financing used cars globally.
+                        </p>
+                        <ul class="timeline-responsibilities">
+                            <li>Design and execution of comprehensive test strategies</li>
+                            <li>Development and maintenance of test automation frameworks</li>
+                            <li>Feature and process documentation</li>
+                            <li>Implementation of quality management tools</li>
+                            <li>Collaboration with cross-functional teams in agile environment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">QA Analyst</h3>
+                        <h4 class="timeline-company">GLAMIT</h4>
+                        <p class="timeline-description">
+                            360° e-commerce services company.
+                        </p>
+                        <ul class="timeline-responsibilities">
+                            <li>Design and execution of manual and automated tests</li>
+                            <li>Development of automation frameworks from scratch</li>
+                            <li>API testing with Postman</li>
+                            <li>Feature and process documentation</li>
+                            <li>Quality assurance across multiple e-commerce projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm always open to new opportunities and interesting projects. 
+                    Whether you have a question or just want to say hi, feel free to reach out.
+                </p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/dfagundez/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/dfagundez" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://gitlab.com/dfagundezz" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+                        </svg>
+                        GitLab
+                    </a>
+                    <a href="https://twitter.com/dfagundez_" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/dfagundezz/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+5491160518371&text=Hello, I got your contact from your website :)" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Diego Fagundez</p>
+            <p class="footer-philosophy">
+                <span class="japanese-term" data-meaning="Imperfection is beauty">侘寂</span> · 
+                <em>wabi-sabi</em> · beauty in simplicity
+            </p>
+        </div>
+    </footer>
+
     <!-- Scripts -->
-    <script src="./js/smooth-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>
