@@ -70,13 +70,14 @@ Clone and run locally:
 git clone https://github.com/dfagundez/dfagundez.github.io.git
 cd dfagundez.github.io
 
-# Option 1: Python
-python -m http.server 8000
+# Simple: Just open it
+open index.html              # macOS
+start index.html             # Windows
+xdg-open index.html          # Linux
 
-# Option 2: Node.js
-npx http-server
-
-# Visit http://localhost:8000
+# Or use a local server (optional):
+python -m http.server 8000   # Python
+npx http-server              # Node.js
 ```
 
 ## Responsive Breakpoints
