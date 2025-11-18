@@ -9,6 +9,7 @@ const translations = {
       home: "Home",
       about: "About",
       experience: "Experience",
+      projects: "Projects",
       contact: "Contact"
     },
     hero: {
@@ -46,6 +47,29 @@ const translations = {
         resp5: "Quality assurance across multiple e-commerce projects"
       }
     },
+    projects: {
+      title: "Projects",
+      kaizen: {
+        badge: "Live",
+        tagline: "Minimalist Productivity App",
+        description: "Personal project embodying the philosophy of continuous improvement. Capture ideas, execute tasks incrementally, and track small daily improvements.",
+        feature1: "Ideas capture",
+        feature2: "Task management",
+        feature3: "Time blocking"
+      },
+      kumostudio: {
+        badge: "In Foundation",
+        tagline: "Software Studio",
+        description: "Founding a software studio focused on custom application development and building SaaS products for specific industry challenges.",
+        service1: "Custom Development",
+        service2: "SaaS Products",
+        service3: "Technical Consulting",
+        status: "Currently building the foundation. Website coming soon."
+      },
+      link: {
+        launch: "Launch App"
+      }
+    },
     contact: {
       title: "Get In Touch",
       text: "I'm always open to new opportunities and interesting projects. Whether you have a question or just want to say hi, feel free to reach out."
@@ -63,6 +87,7 @@ const translations = {
       home: "Inicio",
       about: "Sobre mí",
       experience: "Experiencia",
+      projects: "Proyectos",
       contact: "Contacto"
     },
     hero: {
@@ -100,6 +125,29 @@ const translations = {
         resp5: "Aseguramiento de calidad en múltiples proyectos de e-commerce"
       }
     },
+    projects: {
+      title: "Proyectos",
+      kaizen: {
+        badge: "En Vivo",
+        tagline: "App de Productividad Minimalista",
+        description: "Proyecto personal que encarna la filosofía de mejora continua. Captura ideas, ejecuta tareas de forma incremental y rastrea pequeñas mejoras diarias.",
+        feature1: "Captura de ideas",
+        feature2: "Gestión de tareas",
+        feature3: "Bloques de tiempo"
+      },
+      kumostudio: {
+        badge: "En Fundación",
+        tagline: "Software Studio",
+        description: "Fundando un estudio de software enfocado en desarrollo de aplicaciones a medida y construcción de productos SaaS para desafíos industriales específicos.",
+        service1: "Desarrollo a Medida",
+        service2: "Productos SaaS",
+        service3: "Consultoría Técnica",
+        status: "Actualmente construyendo las bases. Sitio web próximamente."
+      },
+      link: {
+        launch: "Lanzar App"
+      }
+    },
     contact: {
       title: "Contacto",
       text: "Siempre estoy abierto a nuevas oportunidades y proyectos interesantes. Ya sea que tengas una pregunta o solo quieras saludar, no dudes en contactarme."
@@ -117,6 +165,7 @@ const translations = {
       home: "Início",
       about: "Sobre",
       experience: "Experiência",
+      projects: "Projetos",
       contact: "Contato"
     },
     hero: {
@@ -152,6 +201,29 @@ const translations = {
         resp3: "Testes de API com Postman",
         resp4: "Documentação de funcionalidades e processos",
         resp5: "Garantia de qualidade em múltiplos projetos de e-commerce"
+      }
+    },
+    projects: {
+      title: "Projetos",
+      kaizen: {
+        badge: "Ao Vivo",
+        tagline: "App de Produtividade Minimalista",
+        description: "Projeto pessoal que incorpora a filosofia de melhoria contínua. Capture ideias, execute tarefas incrementalmente e acompanhe pequenas melhorias diárias.",
+        feature1: "Captura de ideias",
+        feature2: "Gestão de tarefas",
+        feature3: "Blocos de tempo"
+      },
+      kumostudio: {
+        badge: "Em Fundação",
+        tagline: "Software Studio",
+        description: "Fundando um estúdio de software focado em desenvolvimento de aplicações personalizadas e construção de produtos SaaS para desafios industriais específicos.",
+        service1: "Desenvolvimento Personalizado",
+        service2: "Produtos SaaS",
+        service3: "Consultoria Técnica",
+        status: "Atualmente construindo a base. Site em breve."
+      },
+      link: {
+        launch: "Lançar App"
       }
     },
     contact: {

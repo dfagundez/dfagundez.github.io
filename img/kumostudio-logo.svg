@@ -1,0 +1,36 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kumo Studio Logo - Full Version -->
+  
+  <!-- Outer Hexagon -->
+  <path d="M60 10L100 32.5V77.5L60 110L20 77.5V32.5L60 10Z" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-linejoin="round"
+        opacity="0.2"/>
+  
+  <!-- Main Hexagon -->
+  <path d="M60 20L90 37.5V72.5L60 100L30 72.5V37.5L60 20Z" 
+        stroke="white" 
+        stroke-width="2.5" 
+        stroke-linejoin="round"/>
+  
+  <!-- Connection Lines -->
+  <path d="M60 55L90 37.5M60 55L30 37.5M60 55V100" 
+        stroke="white" 
+        stroke-width="2.5" 
+        stroke-linejoin="round"/>
+  
+  <!-- Center Point -->
+  <circle cx="60" cy="55" r="4" fill="#06b6d4"/>
+  
+  <!-- Cloud Symbol (Kumo) -->
+  <path d="M45 50C45 47 47 45 50 45C50 43 52 41 55 41C57 41 59 42 60 44C61 42 63 41 65 41C68 41 70 43 70 45C73 45 75 47 75 50C75 53 73 55 70 55H50C47 55 45 53 45 50Z" 
+        fill="white" 
+        opacity="0.1"/>
+  
+  <!-- Decorative Lines -->
+  <line x1="35" y1="45" x2="42" y2="45" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  <line x1="78" y1="45" x2="85" y2="45" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  <line x1="60" y1="25" x2="60" y2="32" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+</svg>
+
