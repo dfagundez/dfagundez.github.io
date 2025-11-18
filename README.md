@@ -5,7 +5,7 @@
 
 A minimalist portfolio website inspired by Japanese aesthetics and nature, embodying the principles of **wabi-sabi** (beauty in simplicity), **ma** (negative space), and **kanso** (minimalism).
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 This portfolio embraces the Japanese concept of **侘寂** (wabi-sabi) - finding beauty in imperfection and simplicity. The design features:
 
@@ -15,85 +15,77 @@ This portfolio embraces the Japanese concept of **侘寂** (wabi-sabi) - finding
 - **Shibui (渋い)**: Subtle, understated elegance
 - **Seijaku (静寂)**: Tranquil, calming user experience
 
-## ✨ Features
+## Key Features
 
-- 🌿 **Minimalist Design**: Clean, distraction-free interface
-- 🎋 **Japanese-Inspired Aesthetics**: Natural color palette inspired by matcha tea, bamboo, and Japanese gardens
-- 📱 **Fully Responsive**: Seamless experience across all devices
-- ♿ **Accessible**: WCAG compliant with reduced motion support
-- ⚡ **Performance Optimized**: Fast loading times with minimal dependencies
-- 🎭 **Smooth Animations**: Subtle transitions and parallax effects
-- 🖱️ **Interactive Elements**: Custom cursor effects and scroll animations
+- **Minimalist Design**: Clean, distraction-free interface with Japanese-inspired aesthetics
+- **Multilingual**: English, Spanish, and Portuguese with persistent language preference
+- **Fully Responsive**: Seamless experience across all devices (mobile-first approach)
+- **Accessible**: WCAG AA compliant with reduced motion support
+- **Performance Optimized**: Fast loading times with minimal dependencies
+- **Interactive Elements**: Smooth animations, parallax effects, and custom cursor
+- **Japanese Text Tooltips**: Hover over こんにちは and 侘寂 to discover their meanings
 
-## 🛠️ Technologies
+## Technologies
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern layouts with Grid and Flexbox
+- **HTML5**: Semantic markup with accessibility in mind
+- **CSS3**: Modern layouts with Grid, Flexbox, and CSS Variables
 - **Vanilla JavaScript**: No frameworks, pure performance
+- **i18n System**: Lightweight translation system (English, Spanish, Portuguese)
 - **Google Fonts**: Noto Sans JP & Noto Serif JP for authentic Japanese typography
 
-## 🎨 Color Palette
+## Color Palette
 
 The color scheme draws inspiration from Japanese nature:
 
-- **Washi Paper White** (`#FAFAF8`) - Background
-- **Charcoal** (`#2C3333`) - Primary text
-- **Matcha Green** (`#4A5F4F`) - Accent color
-- **Sage** (`#8B9D83`) - Secondary accent
-- **Bamboo** (`#D4A574`) - Highlights
-- **Clay** (`#F5F2ED`) - Subtle backgrounds
+- **Washi Paper White** `#FAFAF8` - Background
+- **Charcoal** `#2C3333` - Primary text
+- **Matcha Green** `#4A5F4F` - Accent color
+- **Sage** `#8B9D83` - Secondary accent
+- **Bamboo** `#D4A574` - Highlights
+- **Clay** `#F5F2ED` - Subtle backgrounds
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dfagundez.github.io/
-├── index.html          # Main HTML file
+├── index.html        # Main HTML file
+├── README.md         # This file
+├── favicon.svg       # Mt. Fuji inspired favicon
 ├── css/
-│   └── style.css       # Styles with Japanese aesthetic
+│   └── style.css     # Styles with Japanese aesthetic
 ├── js/
-│   └── scripts.js      # Minimal JavaScript interactions
-├── img/
-│   └── profile_image.jpg
-├── favicon.svg         # Main favicon (Mt. Fuji inspired)
-├── favicon-option2.svg # Alternative: Zen stones
-├── favicon-option3.svg # Alternative: Abstract leaves
-└── favicon-option4.svg # Alternative: Mountain & sun (active)
+│   ├── i18n.js       # Internationalization system
+│   └── scripts.js    # Interactions and animations
+└── img/
+    └── profile.png   # Professional photo
 ```
 
-### 🎨 Favicon Design Process
+**Total: 7 essential files** - Pure wabi-sabi, nothing unnecessary.
 
-The final favicon features a minimalist Mt. Fuji-inspired mountain with a rising sun, symbolizing ambition, clarity, and new beginnings. Alternative designs exploring zen circles, stacked stones, and bamboo leaves are kept as documentation of the creative process.
+## Local Development
 
-## 🚀 Local Development
+Clone and run locally:
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/dfagundez/dfagundez.github.io.git
-```
-
-2. Navigate to the directory:
-```bash
 cd dfagundez.github.io
-```
 
-3. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python
+# Option 1: Python
 python -m http.server 8000
 
-# Using Node.js
+# Option 2: Node.js
 npx http-server
+
+# Visit http://localhost:8000
 ```
 
-4. Visit `http://localhost:8000`
-
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Desktop**: > 768px
 - **Tablet**: ≤ 768px
 - **Mobile**: ≤ 480px
 
-## ♿ Accessibility Features
+## Accessibility Features
 
 - Semantic HTML structure
 - ARIA labels for interactive elements
@@ -102,28 +94,32 @@ npx http-server
 - High contrast ratios for text
 - Screen reader friendly
 
-## 🎯 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## 📄 License
+## About Me
 
-This project is open source and available under the [MIT License](LICENSE).
+I'm **Diego Fagundez**, a Software Engineer passionate about quality, simplicity, and continuous improvement. With 5+ years in software quality and 3 years focused on development, I bring a unique perspective that combines QA expertise with modern software engineering.
 
-## 👤 About Me
+**Current Role:** Software Engineer @ Kavak
+**Specialization:** Backend development with Golang, Node.js/TypeScript, and Python
+**Focus:** Microservices, monitoring (DataDog/Grafana), and end-to-end development
 
-I'm Diego Fagundez, a Software QA Engineer passionate about quality, simplicity, and continuous improvement. I specialize in test automation, quality assurance, and building robust testing frameworks.
+### Connect
 
-### Connect with me:
+- [LinkedIn](https://www.linkedin.com/in/dfagundez/)
+- [GitHub](https://github.com/dfagundez)
+- [GitLab](https://gitlab.com/dfagundezz)
+- [X](https://twitter.com/dfagundez_)
+- [Instagram](https://www.instagram.com/dfagundezz/)
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/dfagundez/)
-- 💻 [GitHub](https://github.com/dfagundez)
-- 🦊 [GitLab](https://gitlab.com/dfagundezz)
-- 🐦 [Twitter](https://twitter.com/dfagundez_)
-- 📷 [Instagram](https://www.instagram.com/dfagundezz/)
+## Philosophy
+
+This portfolio reflects the principles of **改善 (Kaizen)** - continuous improvement. Not a revolutionary redesign, but constant, incremental enhancements that compound over time.
 
 ---
 
