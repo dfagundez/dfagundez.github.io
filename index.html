@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diego Fagundez - Software QA Engineer | Minimalist portfolio inspired by Japanese aesthetics and nature">
-    <meta name="keywords" content="Diego Fagundez, Software QA Engineer, Test Automation, Quality Assurance, Developer">
+    <meta name="description" content="Diego Fagundez - Software Engineer | Backend development with Golang, Node.js, Python | Minimalist portfolio inspired by Japanese aesthetics">
+    <meta name="keywords" content="Diego Fagundez, Software Engineer, Golang, Node.js, TypeScript, Python, Backend Developer, Microservices, Kavak">
     <meta name="author" content="Diego Fagundez">
-    <link rel="icon" href="./favicon-option4.svg" type="image/svg+xml">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Diego Fagundez | Software QA Engineer</title>
+    <title>Diego Fagundez | Software Engineer</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -20,11 +20,16 @@
         <div class="nav-container">
             <div class="nav-logo">DF</div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+                <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+            </div>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -38,13 +43,13 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-greeting-container">
-                    <p class="hero-greeting" data-meaning="Hello · Konnichiwa">こんにちは</p>
+                    <p class="hero-greeting" data-meaning-key="hero.greeting.tooltip">こんにちは</p>
                 </div>
                 <h1 class="hero-title">
                     <span class="hero-title-line">Diego</span>
                     <span class="hero-title-line">Fagundez</span>
                 </h1>
-                <p class="hero-subtitle">Software QA Engineer</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Software QA Engineer</p>
                 <div class="hero-decoration"></div>
             </div>
         </div>
@@ -59,38 +64,41 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">01</span>
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title" data-i18n="about.title">About</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
+                    <p class="about-intro" data-i18n="about.intro">
                         I am a Software QA Engineer passionate about quality, simplicity, and continuous improvement.
                     </p>
-                    <p>
+                    <p data-i18n="about.description">
                         With over 3 years of experience in software quality assurance, I specialize in manual testing, 
                         functional testing, and test automation at both UI and service levels. I believe in the philosophy 
                         of <em>kaizen</em> (continuous improvement) and apply it to every aspect of my work.
                     </p>
-                    <p>
+                    <p data-i18n="about.current">
                         Currently, I'm contributing to Kavak's mission of transforming the used car market, 
                         ensuring quality through rigorous testing and automation frameworks.
                     </p>
                     <div class="about-skills">
-                        <span class="skill-tag">Test Automation</span>
-                        <span class="skill-tag">Selenium</span>
-                        <span class="skill-tag">Cypress</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Golang</span>
+                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Cucumber</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">DataDog</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">AI/LangChain</span>
+                        <span class="skill-tag">Software Quality</span>
                         <span class="skill-tag">Agile/Scrum</span>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="image-frame">
-                        <img src="./img/profile_image.jpg" alt="Diego Fagundez">
+                        <img src="./img/profile.png" alt="Diego Fagundez">
                     </div>
                 </div>
             </div>
@@ -102,40 +110,40 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">02</span>
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title" data-i18n="experience.title">Experience</h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-date" data-i18n="experience.kavak.date">2021 - Present</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Software QA Engineer</h3>
+                        <h3 class="timeline-title" data-i18n="experience.kavak.title">Software QA Engineer</h3>
                         <h4 class="timeline-company">Kavak</h4>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="experience.kavak.description">
                             Leading e-commerce platform dedicated to buying, selling, and financing used cars globally.
                         </p>
                         <ul class="timeline-responsibilities">
-                            <li>Design and execution of comprehensive test strategies</li>
-                            <li>Development and maintenance of test automation frameworks</li>
-                            <li>Feature and process documentation</li>
-                            <li>Implementation of quality management tools</li>
-                            <li>Collaboration with cross-functional teams in agile environment</li>
+                            <li data-i18n="experience.kavak.resp1">Design and execution of comprehensive test strategies</li>
+                            <li data-i18n="experience.kavak.resp2">Development and maintenance of test automation frameworks</li>
+                            <li data-i18n="experience.kavak.resp3">Feature and process documentation</li>
+                            <li data-i18n="experience.kavak.resp4">Implementation of quality management tools</li>
+                            <li data-i18n="experience.kavak.resp5">Collaboration with cross-functional teams in agile environment</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-date" data-i18n="experience.glamit.date">2019 - 2021</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">QA Analyst</h3>
+                        <h3 class="timeline-title" data-i18n="experience.glamit.title">QA Analyst</h3>
                         <h4 class="timeline-company">GLAMIT</h4>
-                        <p class="timeline-description">
+                        <p class="timeline-description" data-i18n="experience.glamit.description">
                             360° e-commerce services company.
                         </p>
                         <ul class="timeline-responsibilities">
-                            <li>Design and execution of manual and automated tests</li>
-                            <li>Development of automation frameworks from scratch</li>
-                            <li>API testing with Postman</li>
-                            <li>Feature and process documentation</li>
-                            <li>Quality assurance across multiple e-commerce projects</li>
+                            <li data-i18n="experience.glamit.resp1">Design and execution of manual and automated tests</li>
+                            <li data-i18n="experience.glamit.resp2">Development of automation frameworks from scratch</li>
+                            <li data-i18n="experience.glamit.resp3">API testing with Postman</li>
+                            <li data-i18n="experience.glamit.resp4">Feature and process documentation</li>
+                            <li data-i18n="experience.glamit.resp5">Quality assurance across multiple e-commerce projects</li>
                         </ul>
                     </div>
                 </div>
@@ -148,10 +156,10 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">03</span>
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
             </div>
             <div class="contact-content">
-                <p class="contact-text">
+                <p class="contact-text" data-i18n="contact.text">
                     I'm always open to new opportunities and interesting projects. 
                     Whether you have a question or just want to say hi, feel free to reach out.
                 </p>
@@ -204,15 +212,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Designed & Built by Diego Fagundez</p>
+            <p data-i18n="footer.credit">Designed & Built by Diego Fagundez</p>
             <p class="footer-philosophy">
-                <span class="japanese-term" data-meaning="Imperfection is beauty">侘寂</span> · 
-                <em>wabi-sabi</em> · beauty in simplicity
+                <span class="japanese-term" data-meaning-key="footer.wabisabi.tooltip">侘寂</span> · 
+                <em>wabi-sabi</em> · <span data-i18n="footer.wabisabi.text">beauty in simplicity</span>
             </p>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="./js/i18n.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>

@@ -288,6 +288,11 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 // Initialize
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize i18n system
+  if (typeof initI18n === 'function') {
+    initI18n();
+  }
+  
   // Set initial active nav link
   updateActiveNavLink();
   
