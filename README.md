@@ -104,11 +104,11 @@ npx http-server              # Node.js
 
 ## About Me
 
-I'm **Diego Fagundez**, a Software Engineer passionate about quality, simplicity, and continuous improvement. With 5+ years in software quality and 3 years focused on development, I bring a unique perspective that combines QA expertise with modern software engineering.
+I'm **Diego Fagundez**, a Software Engineer focused on clarity, reliability, and continuous improvement. Nine years in technology, with a longer background in software quality and the last four years focused on development.
 
-**Current Role:** Software Engineer @ Kavak
-**Specialization:** Backend development with Golang, Node.js/TypeScript, and Python
-**Focus:** Microservices, monitoring (DataDog/Grafana), and end-to-end development
+**Current Role:** Software Engineer @ IOL (Invertir Online)
+**Stack emphasis:** Node.js, event-driven architecture, AWS, MongoDB (also Golang, Python, TypeScript where relevant)
+**Past:** Software Engineer @ Kavak (2021–2025); QA @ GLAMIT (2019–2021)
 
 ### Connect
 

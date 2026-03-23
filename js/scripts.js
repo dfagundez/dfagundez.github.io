@@ -60,14 +60,13 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
-  
-  // Add shadow when scrolled
+
   if (currentScroll > 100) {
-    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.05)';
+    nav.classList.add('nav--scrolled');
   } else {
-    nav.style.boxShadow = 'none';
+    nav.classList.remove('nav--scrolled');
   }
-  
+
   lastScroll = currentScroll;
 });
 
@@ -194,14 +193,16 @@ const createCursorCircle = () => {
   cursor.classList.add('cursor-circle');
   cursor.style.cssText = `
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     border: 1px solid var(--color-accent);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    transition: transform 0.2s ease, opacity 0.3s ease;
+    transition: transform 0.15s ease, opacity 0.25s ease;
     opacity: 0;
+    margin-left: -14px;
+    margin-top: -14px;
   `;
   document.body.appendChild(cursor);
 
@@ -213,7 +214,7 @@ const createCursorCircle = () => {
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    cursor.style.opacity = '0.5';
+    cursor.style.opacity = '0.35';
   });
 
   document.addEventListener('mouseleave', () => {
@@ -224,8 +225,8 @@ const createCursorCircle = () => {
     const dx = mouseX - cursorX;
     const dy = mouseY - cursorY;
     
-    cursorX += dx * 0.15;
-    cursorY += dy * 0.15;
+    cursorX += dx * 0.18;
+    cursorY += dy * 0.18;
     
     cursor.style.left = cursorX + 'px';
     cursor.style.top = cursorY + 'px';
@@ -235,24 +236,26 @@ const createCursorCircle = () => {
 
   animateCursor();
 
-  // Scale cursor on hover over interactive elements
   const interactiveElements = document.querySelectorAll('a, button, .skill-tag');
   
   interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
-      cursor.style.transform = 'scale(1.5)';
-      cursor.style.opacity = '0.8';
+      cursor.style.transform = 'scale(1.35)';
+      cursor.style.opacity = '0.55';
     });
     
     el.addEventListener('mouseleave', () => {
       cursor.style.transform = 'scale(1)';
-      cursor.style.opacity = '0.5';
+      cursor.style.opacity = '0.35';
     });
   });
 };
 
-// Only create cursor effect on desktop devices
-if (window.innerWidth > 768) {
+const cursorMotionOk =
+  window.innerWidth > 768 &&
+  !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (cursorMotionOk) {
   createCursorCircle();
 }
 
@@ -285,6 +288,34 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 
 // ==========================================
+// Theme (default dark; persisted in localStorage)
+// ==========================================
+function initThemeToggle() {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+
+  function refreshThemeToggleAria() {
+    const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const key = theme === 'dark' ? 'nav.themeToggleToLight' : 'nav.themeToggleToDark';
+    const label = typeof window.getPortfolioI18nString === 'function' ? window.getPortfolioI18nString(key) : '';
+    if (label) btn.setAttribute('aria-label', label);
+  }
+
+  btn.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const next = isDark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try {
+      localStorage.setItem('theme', next);
+    } catch (e) {}
+    refreshThemeToggleAria();
+  });
+
+  document.addEventListener('portfolioLangChange', refreshThemeToggleAria);
+  refreshThemeToggleAria();
+}
+
+// ==========================================
 // Initialize
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -292,7 +323,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof initI18n === 'function') {
     initI18n();
   }
-  
+
+  initThemeToggle();
+
+  if (nav && window.pageYOffset > 100) {
+    nav.classList.add('nav--scrolled');
+  }
+
   // Set initial active nav link
   updateActiveNavLink();
   
