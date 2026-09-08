@@ -1,413 +1,292 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diego Fagundez — Software Engineer at IOL. Nine years in tech (QA background, four years in development). Node.js, AWS, MongoDB. Portfolio: Kadencia, Kaizen, Vizu, Kumo Studio.">
-    <meta name="keywords" content="Diego Fagundez, Software Engineer, IOL, Invertir Online, Node.js, AWS, MongoDB, Event-driven, Golang, TypeScript, Python, Backend, Kadencia, Kaizen, Vizu, Kumo Studio">
-    <meta name="author" content="Diego Fagundez">
+    <meta name="description" content="Diego Fagundez, ingeniero de software y consultor técnico. Automatizaciones, integraciones y agentes con IA para sacar el trabajo manual de encima.">
+    <meta property="og:title" content="Diego Fagundez — Ingeniero de Software y Consultor Técnico">
+    <meta property="og:description" content="Automatizaciones, integraciones entre sistemas, paneles a medida y agentes con IA donde de verdad aportan.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:url" content="https://dfagundez.dev/">
+    <meta property="og:image" content="https://dfagundez.dev/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Diego Fagundez — Ingeniero de Software y Consultoría técnica">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://dfagundez.dev/">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="alternate icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
-    <script>
-      (function () {
-        try {
-          var t = localStorage.getItem('theme');
-          document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
-        } catch (e) {}
-      })();
-    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <title data-es="Diego Fagundez — Ingeniero de Software y Consultor Técnico" data-en="Diego Fagundez — Software Engineer &amp; Technical Consultant">Diego Fagundez — Ingeniero de Software y Consultor Técnico</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Diego Fagundez | Software Engineer</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">DF</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
-                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
-                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
-                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
-                <span class="theme-toggle-icon theme-toggle-icon--sun" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
-                </span>
-                <span class="theme-toggle-icon theme-toggle-icon--moon" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </span>
-            </button>
-            <div class="language-selector">
-                <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
-                <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
-                <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="app">
+        <div class="depth-root" aria-hidden="true">
+            <div class="depth-grid"></div>
+            <div class="cursor-glow"></div>
+            <div class="depth-vignette"></div>
+            <div class="depth-grain"></div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-greeting-container">
-                    <p class="hero-greeting" data-meaning-key="hero.greeting.tooltip">こんにちは</p>
-                </div>
-                <h1 class="hero-title">
-                    <span class="hero-title-line">Diego</span>
-                    <span class="hero-title-line">Fagundez</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Software Engineer</p>
-                <div class="hero-decoration"></div>
+        <header class="header">
+            <div class="header-inner">
+                <a href="#home" class="logo">df<span class="logo-cursor">_</span></a>
+                <nav class="nav">
+                    <a href="#about" class="nav-link" data-es="Perfil" data-en="Profile">Perfil</a>
+                    <a href="#projects" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                    <a href="#services" class="nav-link" data-es="Servicios" data-en="Services">Servicios</a>
+                    <a href="#contact" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a>
+                </nav>
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
+        </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title" data-i18n="about.title">About</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro" data-i18n="about.intro">
-                        I'm a Software Engineer who cares about clarity, reliability, and continuous improvement.
-                    </p>
-                    <p data-i18n="about.description">
-                        I've spent nine years in technology, with a longer foundation in software quality and the last four years focused on development. I work mainly with Node.js and event-driven architectures, and I'm actively growing in MongoDB and AWS.
-                    </p>
-                    <p data-i18n="about.current">
-                        At IOL (Invertir Online), I'm on the team building the app that lets Argentine residents invest internationally, with a path toward serving more people across Latin America.
-                    </p>
-                    <div class="about-skills">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Event-driven</span>
-                        <span class="skill-tag">Golang</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Microservices</span>
-                        <span class="skill-tag">APIs</span>
-                        <span class="skill-tag">DataDog</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Agile</span>
+        <main class="main">
+            <section id="home" class="section hero-section">
+                <div class="aurora"></div>
+                <div class="section-inner">
+                    <div class="reveal">
+                        <h1 class="hero-title">Diego Fagundez</h1>
                     </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img src="./img/profile.png" alt="Diego Fagundez">
+                    <div class="reveal" style="--delay: 80ms">
+                        <p class="hero-role" data-es="Ingeniero de Software · Consultoría técnica" data-en="Software Engineer · Technical Consulting">Ingeniero de Software · Consultoría técnica</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title" data-i18n="experience.title">Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date" data-i18n="experience.iol.date">2026 - Present</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-i18n="experience.iol.title">Software Engineer</h3>
-                        <h4 class="timeline-company">IOL (Invertir Online)</h4>
-                        <p class="timeline-description" data-i18n="experience.iol.description">
-                            IOL (Invertir Online) — online broker building products for international investing, starting with Argentine residents and a vision to scale across Latin America.
-                        </p>
-                        <ul class="timeline-responsibilities">
-                            <li data-i18n="experience.iol.resp1">Backend development with Node.js in an event-driven architecture</li>
-                            <li data-i18n="experience.iol.resp2">Working with MongoDB, AWS services, and asynchronous integration patterns</li>
-                            <li data-i18n="experience.iol.resp3">Collaboration with product and engineering in iterative, agile delivery</li>
-                            <li data-i18n="experience.iol.resp4">Ownership from technical design through production operations</li>
-                            <li data-i18n="experience.iol.resp5">Learning and applying cloud-native practices in a regulated domain</li>
-                        </ul>
+                    <div class="reveal" style="--delay: 160ms">
+                        <p class="hero-subtitle" data-es="Ayudo a empresas y equipos a sacarse el trabajo manual de encima: automatizaciones, integraciones entre sistemas, paneles a medida y agentes con IA donde de verdad aportan. En tecnología desde 2019." data-en="I help companies and teams take manual work off their plate: automations, system integrations, custom dashboards, and AI agents where they genuinely pay off. In tech since 2019.">Ayudo a empresas y equipos a sacarse el trabajo manual de encima: automatizaciones, integraciones entre sistemas, paneles a medida y agentes con IA donde de verdad aportan. En tecnología desde 2019.</p>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date" data-i18n="experience.kavak.date">2021 - 2025</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-i18n="experience.kavak.title">Software Engineer</h3>
-                        <h4 class="timeline-company">Kavak</h4>
-                        <p class="timeline-description" data-i18n="experience.kavak.description">
-                            Leading e-commerce platform for buying, selling, and financing used cars globally. Joined finance during infrastructure refactoring from monolith to microservices.
-                        </p>
-                        <ul class="timeline-responsibilities">
-                            <li data-i18n="experience.kavak.resp1">Backend development with Golang, Node.js/TypeScript, and Python</li>
-                            <li data-i18n="experience.kavak.resp2">Migrated APIs from monolith to microservices; built new services in Node.js and Golang</li>
-                            <li data-i18n="experience.kavak.resp3">Maintained multiple backends and backoffice frontends across teams</li>
-                            <li data-i18n="experience.kavak.resp4">Monitoring and metrics with DataDog and Grafana</li>
-                            <li data-i18n="experience.kavak.resp5">End-to-end delivery from design to production deployment</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date" data-i18n="experience.glamit.date">2019 - 2021</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title" data-i18n="experience.glamit.title">QA Analyst</h3>
-                        <h4 class="timeline-company">GLAMIT</h4>
-                        <p class="timeline-description" data-i18n="experience.glamit.description">
-                            360° e-commerce services company.
-                        </p>
-                        <ul class="timeline-responsibilities">
-                            <li data-i18n="experience.glamit.resp1">Design and execution of manual and automated tests</li>
-                            <li data-i18n="experience.glamit.resp2">Development of automation frameworks from scratch</li>
-                            <li data-i18n="experience.glamit.resp3">API testing with Postman</li>
-                            <li data-i18n="experience.glamit.resp4">Feature and process documentation</li>
-                            <li data-i18n="experience.glamit.resp5">Quality assurance across multiple e-commerce projects</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title" data-i18n="projects.title">Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <!-- Kadencia -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">Kadencia</h3>
-                        <span class="project-badge live" data-i18n="projects.kadencia.badge">Live</span>
-                    </div>
-                    <p class="project-tagline" data-i18n="projects.kadencia.tagline">Training routines &amp; workouts</p>
-                    <p class="project-description" data-i18n="projects.kadencia.description">
-                        Create, save, and run workout routines with Supabase auth and Postgres. Import routines from text or photos using OCR and AI-assisted parsing.
-                    </p>
-                    <div class="project-features">
-                        <span data-i18n="projects.kadencia.feature1">Auth &amp; cloud data</span>
-                        <span data-i18n="projects.kadencia.feature2">AI-assisted import</span>
-                        <span data-i18n="projects.kadencia.feature3">Sessions &amp; history</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>SvelteKit</span>
-                        <span>TypeScript</span>
-                        <span>Supabase</span>
-                        <span>Tesseract</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://kadencia.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            <span data-i18n="projects.link.openApp">Open app</span>
+                    <div class="reveal ctas" style="--delay: 240ms">
+                        <a href="#contact" class="btn btn-primary">
+                            <span class="pulse-dot" aria-hidden="true"></span>
+                            <span data-es="Hablemos" data-en="Let's talk">Hablemos</span>
+                            <span class="sr-only" data-es="— disponible para nuevos proyectos" data-en="— available for new projects">— disponible para nuevos proyectos</span>
+                            <svg aria-hidden="true" class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"></path></svg>
                         </a>
+                        <a href="#projects" class="btn btn-secondary" data-es="Ver proyectos" data-en="See projects">Ver proyectos</a>
                     </div>
                 </div>
+            </section>
 
-                <!-- Kaizen App -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">改善 Kaizen</h3>
-                        <span class="project-badge live" data-i18n="projects.kaizen.badge">Live</span>
+            <section id="about" class="section">
+                <div class="section-inner">
+                    <div class="reveal">
+                        <p class="eyebrow" data-es="Perfil" data-en="Profile">Perfil</p>
+                        <h2 class="section-title" data-es="Sobre mí y experiencia" data-en="About me and experience">Sobre mí y experiencia</h2>
                     </div>
-                    <p class="project-tagline" data-i18n="projects.kaizen.tagline">Minimalist Productivity App</p>
-                    <p class="project-description" data-i18n="projects.kaizen.description">
-                        Personal project embodying the philosophy of continuous improvement.
-                        Capture ideas, execute tasks incrementally, and track small daily improvements.
-                    </p>
-                    <div class="project-features">
-                        <span data-i18n="projects.kaizen.feature1">Ideas capture</span>
-                        <span data-i18n="projects.kaizen.feature2">Task management</span>
-                        <span data-i18n="projects.kaizen.feature3">Time blocking</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Next.js</span>
-                        <span>TypeScript</span>
-                        <span>Supabase</span>
-                        <span>Tailwind CSS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://kaizen-bice.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            <span data-i18n="projects.link.openApp">Open app</span>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Vizu -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Vizu</h3>
-                        <span class="project-badge live" data-i18n="projects.vizu.badge">Live</span>
+                    <div class="reveal bio-text">
+                        <p data-es="Empecé en QA, probando y rompiendo software antes de construirlo. Esa etapa me dejó una costumbre que no se me fue: pensar primero en qué puede fallar. Hoy desarrollo backend, sistemas en la nube e integraciones, y esa costumbre es la que hace que lo que entrego aguante." data-en="I started in QA, testing and breaking software before building it. That stage left me with a habit I never lost: thinking first about what can go wrong. Today I build backends, cloud systems, and integrations, and that habit is what makes what I ship hold up.">Empecé en QA, probando y rompiendo software antes de construirlo. Esa etapa me dejó una costumbre que no se me fue: pensar primero en qué puede fallar. Hoy desarrollo backend, sistemas en la nube e integraciones, y esa costumbre es la que hace que lo que entrego aguante.</p>
+                        <p data-es="Hoy trabajo en IOL (Invertir Online) construyendo infraestructura financiera, donde un error no es un inconveniente: es plata de alguien. En paralelo tomo proyectos de consultoría, sobre todo automatizaciones e integraciones con IA." data-en="Today I work at IOL (Invertir Online) building financial infrastructure, where a bug isn't an inconvenience: it's someone's money. Alongside that I take on consulting projects, mostly automations and AI integrations.">Hoy trabajo en IOL (Invertir Online) construyendo infraestructura financiera, donde un error no es un inconveniente: es plata de alguien. En paralelo tomo proyectos de consultoría, sobre todo automatizaciones e integraciones con IA.</p>
                     </div>
-                    <p class="project-tagline" data-i18n="projects.vizu.tagline">Mermaid diagrams in the browser</p>
-                    <p class="project-description" data-i18n="projects.vizu.description">
-                        Lightweight editor for Mermaid.js: live preview, zoom, multiple diagrams, PNG export and clipboard copy—single HTML, no install required.
-                    </p>
-                    <div class="project-features">
-                        <span data-i18n="projects.vizu.feature1">Live preview</span>
-                        <span data-i18n="projects.vizu.feature2">Export PNG / JSON</span>
-                        <span data-i18n="projects.vizu.feature3">Zero build step</span>
-                    </div>
-                    <div class="project-tech">
-                        <span>Mermaid.js</span>
-                        <span>Vanilla JS</span>
-                        <span>HTML/CSS</span>
-                    </div>
-                    <div class="project-links project-links--split">
-                        <a href="https://dfagundez.github.io/vizu/" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            <span data-i18n="projects.link.openApp">Open app</span>
-                        </a>
-                        <a href="https://github.com/dfagundez/vizu" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                            </svg>
-                            <span data-i18n="projects.link.viewOnGitHub">View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- KumoStudio -->
-                <div class="project-card venture">
-                    <div class="project-header">
-                        <img src="./img/kumostudio-logo.svg" alt="KumoStudio" class="venture-logo">
-                        <span class="project-badge live" data-i18n="projects.kumostudio.badge">Live</span>
+                    <div class="reveal skills-tags" style="--delay: 100ms">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Event-driven</span>
+                        <span class="tag">Golang</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag" data-es="Agentes IA" data-en="AI Agents">Agentes IA</span>
                     </div>
-                    <h3 class="project-title">雲 KumoStudio</h3>
-                    <p class="project-tagline" data-i18n="projects.kumostudio.tagline">Personal studio brand</p>
-                    <p class="project-description" data-i18n="projects.kumostudio.description">
-                        Kumo Studio is my umbrella for product work: a SaaS-first focus on gyms, CrossFit boxes, art centers, and similar venues.
-                    </p>
-                    <div class="venture-services">
-                        <div class="service-item">
-                            <span class="service-icon">☁️</span>
-                            <span data-i18n="projects.kumostudio.service1">SaaS for venues &amp; studios</span>
+
+                    <div class="experience-timeline">
+                        <div class="experience-item reveal">
+                            <div class="exp-dot"></div>
+                            <div class="exp-content">
+                                <div class="exp-header">
+                                    <h3 class="exp-title" data-es="Ingeniero de Software · IOL (Invertir Online)" data-en="Software Engineer · IOL (Invertir Online)">Ingeniero de Software · IOL (Invertir Online)</h3>
+                                    <span class="exp-date" data-es="Ene 2026 - Presente" data-en="Jan 2026 - Present">Ene 2026 - Presente</span>
+                                </div>
+                                <ul class="exp-list">
+                                    <li data-es="Desarrollo backend de IOL Privé, la plataforma de wealth management para invertir en el mercado de Estados Unidos. En producción, hoy en etapa de mejora y escalado." data-en="Backend development for IOL Privé, the wealth management platform for investing in the US market. Live in production, currently being improved and scaled.">Desarrollo backend de IOL Privé, la plataforma de wealth management para invertir en el mercado de Estados Unidos. En producción, hoy en etapa de mejora y escalado.</li>
+                                    <li data-es="Node.js sobre arquitectura event-driven, con MongoDB, AWS e integraciones asíncronas entre sistemas." data-en="Node.js on an event-driven architecture, with MongoDB, AWS, and asynchronous system integrations.">Node.js sobre arquitectura event-driven, con MongoDB, AWS e integraciones asíncronas entre sistemas.</li>
+                                    <li data-es="Ownership de punta a punta: del diseño técnico a la operación en producción." data-en="End-to-end ownership: from technical design to production operations.">Ownership de punta a punta: del diseño técnico a la operación en producción.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="service-item">
-                            <span class="service-icon">✨</span>
-                            <span data-i18n="projects.kumostudio.service2">AI for processes &amp; UX</span>
+
+                        <div class="experience-item reveal" style="--delay: 90ms">
+                            <div class="exp-dot"></div>
+                            <div class="exp-content">
+                                <div class="exp-header">
+                                    <h3 class="exp-title" data-es="Ingeniero de Software · Kavak" data-en="Software Engineer · Kavak">Ingeniero de Software · Kavak</h3>
+                                    <span class="exp-date" data-es="2021 - Dic 2025" data-en="2021 - Dec 2025">2021 - Dic 2025</span>
+                                </div>
+                                <ul class="exp-list">
+                                    <li data-es="Desarrollo backend con Golang, Node.js/TypeScript y Python" data-en="Backend development with Golang, Node.js/TypeScript, and Python">Desarrollo backend con Golang, Node.js/TypeScript y Python</li>
+                                    <li data-es="Migración de APIs de monolito a arquitectura de microservicios" data-en="Migrated APIs from monolith to microservices architecture">Migración de APIs de monolito a arquitectura de microservicios</li>
+                                    <li data-es="Monitoreo y métricas con DataDog y Grafana" data-en="Monitoring and metrics with DataDog and Grafana">Monitoreo y métricas con DataDog y Grafana</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="service-item">
-                            <span class="service-icon">🛠️</span>
-                            <span data-i18n="projects.kumostudio.service3">Custom development &amp; consulting</span>
+
+                        <div class="experience-item reveal" style="--delay: 180ms">
+                            <div class="exp-dot"></div>
+                            <div class="exp-content">
+                                <div class="exp-header">
+                                    <h3 class="exp-title" data-es="Analista QA · GLAMIT" data-en="QA Analyst · GLAMIT">Analista QA · GLAMIT</h3>
+                                    <span class="exp-date">2019 - 2021</span>
+                                </div>
+                                <ul class="exp-list">
+                                    <li data-es="Diseño y ejecución de pruebas manuales y automatizadas" data-en="Design and execution of manual and automated tests">Diseño y ejecución de pruebas manuales y automatizadas</li>
+                                    <li data-es="Desarrollo de frameworks de automatización desde cero" data-en="Development of automation frameworks from scratch">Desarrollo de frameworks de automatización desde cero</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://kumostudio.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                            <span data-i18n="projects.link.visitSite">Visit site</span>
-                        </a>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-inner">
+                    <div class="reveal">
+                        <p class="eyebrow" data-es="Proyectos" data-en="Projects">Proyectos</p>
+                        <h2 class="section-title" data-es="Proyectos personales" data-en="Personal projects">Proyectos personales</h2>
                     </div>
-                    <p class="venture-status" data-i18n="projects.kumostudio.status">
-                        SaaS products in development; studio site and services are live.
-                    </p>
+
+                    <div class="projects-grid">
+                        <article class="project-card reveal sheen">
+                            <div class="project-header">
+                                <div>
+                                    <h3 class="project-title">Kadencia</h3>
+                                    <p class="project-subtitle" data-es="Rutinas de entrenamiento y ejercicios" data-en="Training routines & workouts">Rutinas de entrenamiento y ejercicios</p>
+                                </div>
+                                <span class="badge badge-live"><span class="pulse-dot"></span><span>Live</span></span>
+                            </div>
+                            <p class="project-desc" data-es="Crea, guarda y ejecuta rutinas de entrenamiento. Importa desde texto o fotos usando OCR y análisis asistido por IA." data-en="Create, save, and run workout routines. Import from text or photos using OCR and AI-assisted parsing.">Crea, guarda y ejecuta rutinas de entrenamiento. Importa desde texto o fotos usando OCR y análisis asistido por IA.</p>
+                            <div class="project-tags">
+                                <span class="tag">SvelteKit</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Supabase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://kadencia.vercel.app/" class="project-link">Demo <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: -2px;"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal sheen" style="--delay: 90ms">
+                            <div class="project-header">
+                                <div>
+                                    <h3 class="project-title">改善 Kaizen</h3>
+                                    <p class="project-subtitle" data-es="App minimalista de productividad" data-en="Minimalist Productivity App">App minimalista de productividad</p>
+                                </div>
+                                <span class="badge badge-live"><span class="pulse-dot"></span><span>Live</span></span>
+                            </div>
+                            <p class="project-desc" data-es="Captura ideas, ejecuta tareas incrementalmente y rastrea mejoras diarias." data-en="Capture ideas, execute tasks incrementally, and track daily improvements.">Captura ideas, ejecuta tareas incrementalmente y rastrea mejoras diarias.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Supabase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://kaizen-bice.vercel.app" class="project-link">Demo <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: -2px;"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal sheen" style="--delay: 180ms">
+                            <div class="project-header">
+                                <div>
+                                    <h3 class="project-title">Vizu</h3>
+                                    <p class="project-subtitle" data-es="Diagramas Mermaid en el navegador" data-en="Mermaid diagrams in browser">Diagramas Mermaid en el navegador</p>
+                                </div>
+                                <span class="badge" data-es="Código abierto" data-en="Open Source">Código abierto</span>
+                            </div>
+                            <p class="project-desc" data-es="Editor ligero para Mermaid.js con vista previa en vivo, exportación y sin pasos de compilación." data-en="Lightweight editor for Mermaid.js with live preview, export, and zero build step.">Editor ligero para Mermaid.js con vista previa en vivo, exportación y sin pasos de compilación.</p>
+                            <div class="project-tags">
+                                <span class="tag">Mermaid.js</span>
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://dfagundez.github.io/vizu/" class="project-link">Demo <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: -2px;"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                                <a href="https://github.com/dfagundez/vizu" class="project-link">
+                                    <svg aria-hidden="true" class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5a3.5 3.5 0 0 0 -1.025 -2.5c2.067 -.43 4.25 -1.3 4.25 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.3 4.3 0 0 0 -.1 -3.2s-1.05 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.45 -1.6 -3.5 -1.3 -3.5 -1.3a4.3 4.3 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.7 2.18 5.57 4.25 6a3.5 3.5 0 0 0 -1.025 2.5v3.5"></path></svg>
+                                    <span data-es="GitHub" data-en="GitHub">GitHub</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
-            </div>
-            <div class="contact-content">
-                <p class="contact-text" data-i18n="contact.text">
-                    I'm always open to new opportunities and interesting projects. 
-                    Whether you have a question or just want to say hi, feel free to reach out.
-                </p>
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/dfagundez/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/dfagundez" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="https://gitlab.com/dfagundezz" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
-                        </svg>
-                        GitLab
-                    </a>
-                    <a href="https://twitter.com/dfagundez_" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                        Twitter
-                    </a>
-                    <a href="https://www.instagram.com/dfagundezz/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                        Instagram
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=+5491160518371&text=Hello, I got your contact from your website :)" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                        WhatsApp
-                    </a>
+            <section id="services" class="section">
+                <div class="section-inner">
+                    <div class="reveal">
+                        <p class="eyebrow" data-es="Servicios" data-en="Services">Servicios</p>
+                        <h2 class="section-title" data-es="Lo que puedo hacer por vos" data-en="What I can do for you">Lo que puedo hacer por vos</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card reveal sheen">
+                            <div class="service-header">
+                                <h3 class="service-title" data-es="Desarrollo Backend & Microservicios" data-en="Backend & Microservices">Desarrollo Backend & Microservicios</h3>
+                                <span class="tag service-badge">Node.js · Golang</span>
+                            </div>
+                            <p class="service-desc" data-es="APIs robustas, arquitecturas event-driven y diseño de microservicios. Node.js, Golang, event streaming." data-en="Robust APIs, event-driven architectures, and microservice design. Node.js, Golang, event streaming.">APIs robustas, arquitecturas event-driven y diseño de microservicios. Node.js, Golang, event streaming.</p>
+                        </div>
+
+                        <div class="service-card reveal sheen" style="--delay: 90ms">
+                            <div class="service-header">
+                                <h3 class="service-title" data-es="Arquitectura en la nube & AWS" data-en="Cloud Architecture & AWS">Arquitectura en la nube & AWS</h3>
+                                <span class="tag service-badge">AWS · IaC</span>
+                            </div>
+                            <p class="service-desc" data-es="Infraestructura serverless, containerizada y optimizada en costos. Escalable, observable y lista para producción." data-en="Serverless, containerized, and cost-optimized infrastructure. Scalable, observable, production-ready.">Infraestructura serverless, containerizada y optimizada en costos. Escalable, observable y lista para producción.</p>
+                        </div>
+
+                        <div class="service-card reveal sheen" style="--delay: 180ms">
+                            <div class="service-header">
+                                <h3 class="service-title" data-es="Web personalizado y backoffices" data-en="Custom Web & Backoffices">Web personalizado y backoffices</h3>
+                                <span class="tag service-badge">Full-stack</span>
+                            </div>
+                            <p class="service-desc" data-es="Aplicaciones full-stack, dashboards administrativos y sistemas en tiempo real. Código limpio y mantenible." data-en="Full-stack applications, admin dashboards, and real-time systems. Clean, maintainable code.">Aplicaciones full-stack, dashboards administrativos y sistemas en tiempo real. Código limpio y mantenible.</p>
+                        </div>
+
+                        <div class="service-card reveal sheen" style="--delay: 270ms">
+                            <div class="service-header">
+                                <h3 class="service-title" data-es="Integración de IA y automatización" data-en="AI Integration & Automation">Integración de IA y automatización</h3>
+                                <span class="tag service-badge">Claude API</span>
+                            </div>
+                            <p class="service-desc" data-es="Integración de LLM, automatizaciones inteligentes, chatbots y flujos de trabajo impulsados por IA. Práctico, no solo marketing." data-en="LLM integration, intelligent automations, chatbots, and AI-powered workflows. Practical, not just hype.">Integración de LLM, automatizaciones inteligentes, chatbots y flujos de trabajo impulsados por IA. Práctico, no solo marketing.</p>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-inner">
+                    <div class="reveal">
+                        <p class="eyebrow" data-es="Contacto" data-en="Contact">Contacto</p>
+                        <h2 class="section-title" data-es="Trabajemos juntos" data-en="Let's work together">Trabajemos juntos</h2>
+                    </div>
+                    <div class="reveal contact-text">
+                        <p data-es="¿Tienes un proyecto en mente? Hablemos sobre qué necesitas y cómo puedo ayudarte. Sin compromiso, solo una conversación." data-en="Have a project in mind? Let's chat about what you need and how I can help. No commitment, just a conversation.">¿Tienes un proyecto en mente? Hablemos sobre qué necesitas y cómo puedo ayudarte. Sin compromiso, solo una conversación.</p>
+                    </div>
+                    <div class="reveal contact-links" style="--delay: 100ms">
+                        <a href="mailto:hola@dfagundez.dev" class="btn btn-primary">
+                            <svg aria-hidden="true" class="btn-icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            <span data-es="Enviarme un email" data-en="Email me">Enviarme un email</span>
+                        </a>
+                        <a href="https://linkedin.com/in/dfagundez" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                        <a href="https://github.com/dfagundez" target="_blank" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="section-inner">
+                <p class="footer-copy">© 2026 Diego Fagundez</p>
+                <p class="footer-working"><span data-es="Actualmente trabajando en" data-en="Currently working on">Actualmente trabajando en</span> <span class="typewriter" data-words="IOL Privé|Kadencia" aria-hidden="true">IOL Privé</span><span class="sr-only">IOL Privé, Kadencia</span></p>
             </div>
-        </div>
-    </section>
+        </footer>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p data-i18n="footer.credit">Designed & Built by Diego Fagundez</p>
-            <p class="footer-philosophy">
-                <span class="japanese-term" data-meaning-key="footer.wabisabi.tooltip">侘寂</span> · 
-                <em>wabi-sabi</em> · <span data-i18n="footer.wabisabi.text">beauty in simplicity</span>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="./js/i18n.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>

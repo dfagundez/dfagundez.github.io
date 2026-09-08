@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Design Tokens — Diego Fagundez</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            padding: 3rem 1.5rem;
+        }
+
+        .shell {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .lede {
+            color: var(--muted);
+            margin-bottom: 3rem;
+            max-width: 42rem;
+        }
+
+        h2 {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin: 2.5rem 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+
+        .swatch {
+            height: 88px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+        }
+
+        .name {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--fg);
+        }
+
+        .val {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            margin-top: 0.2rem;
+        }
+
+        .use {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-top: 0.35rem;
+        }
+
+        .type-row {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hint {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--accent);
+            min-height: 1.2em;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <h1>Design tokens</h1>
+        <p class="lede">
+            Live reference for the portfolio's design system. Values are read from
+            <code>css/style.css</code> at runtime, so this page cannot drift out of sync.
+            Click a swatch to copy its token name.
+        </p>
+
+        <h2>Color</h2>
+        <div class="grid" id="colors"></div>
+
+        <h2>Typography</h2>
+        <div id="type"></div>
+
+        <h2>Radius</h2>
+        <div id="radius"></div>
+    </div>
+
+    <script>
+        const COLORS = [
+            ['--bg', 'Page background'],
+            ['--fg', 'Primary text'],
+            ['--surface', 'Cards and raised surfaces'],
+            ['--muted', 'Secondary text (WCAG AA against --bg)'],
+            ['--border', 'Borders and dividers'],
+            ['--accent', 'Links, emphasis, active states'],
+            ['--accent-text', 'Text on an accent background'],
+            ['--live', 'Live indicators and availability dot'],
+        ];
+
+        const root = getComputedStyle(document.documentElement);
+        const read = (token) => root.getPropertyValue(token).trim();
+
+        // Canvas forces the conversion to sRGB. getComputedStyle is no help here:
+        // Chrome keeps oklch() as-authored instead of resolving it to rgb().
+        const ctx = document.createElement('canvas').getContext('2d');
+        const toHex = (value) => {
+            ctx.fillStyle = '#000';
+            ctx.fillStyle = value;
+            ctx.fillRect(0, 0, 1, 1);
+            const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+            return '#' + [r, g, b]
+                .map(n => n.toString(16).padStart(2, '0'))
+                .join('').toUpperCase();
+        };
+
+        document.getElementById('colors').innerHTML = COLORS.map(([token, use]) => {
+            const value = read(token);
+            return `<div>
+                <div class="swatch" style="background-color:${value}" data-token="${token}"></div>
+                <div class="name">${token}</div>
+                <div class="val">${value}</div>
+                <div class="val">${toHex(value)}</div>
+                <div class="use">${use}</div>
+                <div class="hint"></div>
+            </div>`;
+        }).join('');
+
+        document.getElementById('type').innerHTML = [
+            ['--font-sans', 'The quick brown fox jumps over the lazy dog', '1.25rem'],
+            ['--font-mono', 'const shipped = true; // 0123456789', '0.95rem'],
+        ].map(([token, sample, size]) => `
+            <div class="type-row">
+                <div style="font-family:var(${token});font-size:${size}">${sample}</div>
+                <div class="val">${token} — ${read(token)}</div>
+            </div>`).join('');
+
+        document.getElementById('radius').innerHTML = `
+            <div class="type-row">
+                <div class="swatch" style="background-color:var(--surface);max-width:200px"></div>
+                <div class="val">--radius — ${read('--radius')}</div>
+            </div>`;
+
+        document.addEventListener('click', (e) => {
+            const swatch = e.target.closest('[data-token]');
+            if (!swatch) return;
+            const token = swatch.dataset.token;
+            const hint = swatch.parentElement.querySelector('.hint');
+            navigator.clipboard.writeText(`var(${token})`).then(() => {
+                hint.textContent = 'copied';
+                setTimeout(() => { hint.textContent = ''; }, 1600);
+            });
+        });
+    </script>
+</body>
+</html>
